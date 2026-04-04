@@ -1,0 +1,190 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\geometry{margin=1in}
+
+\title{Triangulation nach Schult:\\
+A Structured Multi-Agent Protocol for Divergence Analysis and Human-Centered Synthesis}
+\author{Denis Schult}
+\date{April 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The \textit{Triangulation nach Schult} is a structured, model-agnostic protocol for divergence analysis using multiple Large Language Models (LLMs). 
+Instead of optimizing for consensus, the method treats disagreement, contradiction, and model refusal as epistemically informative signals.
+
+The protocol defines a six-phase process (P1--P6) for hypothesis stress-testing, bias detection, and human-centered synthesis.
+It is designed as a heuristic framework for decision-making under uncertainty, didactic applications, and exploratory system analysis.
+
+The method does not aim to produce objective truth. Instead, it exposes weaknesses in assumptions through structured multi-perspective comparison.
+An exploratory case study demonstrates its application using real model outputs.
+\end{abstract}
+
+\section{Introduction}
+
+Large Language Models (LLMs) often produce convergent outputs due to shared training data and alignment constraints.
+Such convergence may obscure systematic errors.
+
+Traditional multi-model approaches emphasize agreement.
+However, agreement is not a reliable proxy for correctness.
+
+\textit{Triangulation nach Schult} reframes this:
+
+\begin{quote}
+Divergence is treated as an informative signal rather than noise.
+\end{quote}
+
+The method structures multiple LLM outputs to support human reasoning under uncertainty.
+
+\section{Related Work}
+
+The method relates to:
+
+\begin{itemize}
+\item Methodological triangulation (Denzin, Patton)
+\item Delphi method (Dalkey \& Helmer)
+\item Ensemble methods in machine learning
+\item Adversarial testing and red teaming
+\item Multi-agent LLM reasoning frameworks
+\end{itemize}
+
+Unlike these approaches, it does not optimize for consensus but analyzes structured divergence.
+
+\section{Method Overview}
+
+\subsection{Core Principle}
+
+The method analyzes the structure of disagreement rather than seeking agreement.
+
+\subsection{Functional Roles (Example)}
+
+\begin{tabular}{ll}
+\toprule
+Role & Function \\
+\midrule
+Signal & Detects patterns and anomalies \\
+Structure & Builds relationships and scenarios \\
+Critique & Identifies logical weaknesses \\
+Boundary & Marks uncertainty and limits \\
+Falsification & Tests hypotheses \\
+Synthesis & Integrates outputs \\
+Human Operator & Final judgment \\
+\bottomrule
+\end{tabular}
+
+\section{Protocol (P1--P6)}
+
+\textbf{P1:} Define hypotheses and falsification thresholds.\\
+\textbf{P2:} Select models and assign roles.\\
+\textbf{P3:} Parallel prompting with identical input.\\
+\textbf{P4:} Map divergence across outputs.\\
+\textbf{P5:} Human synthesis with justification.\\
+\textbf{P6:} Meta-reflection on bias and omissions.
+
+\section{Falsification Conditions}
+
+\begin{itemize}
+\item Persistent divergence without coherent interpretation
+\item Insufficient model coverage
+\item Unjustified synthesis
+\item External contradiction
+\end{itemize}
+
+\section{Case Study (Exploratory)}
+
+\subsection{Setup}
+
+On April 4, 2026, multiple LLMs were prompted with an identical query:
+
+\begin{quote}
+Analyze the European energy situation (April 2026) focusing on TTF gas prices and industrial response.
+Evaluate predefined hypotheses and provide structured reasoning.
+\end{quote}
+
+Models included:
+\begin{itemize}
+\item Grok (signal-focused)
+\item Claude (analytical reasoning)
+\item Copilot (operational perspective)
+\end{itemize}
+
+\subsection{Observations}
+
+\begin{itemize}
+\item Grok emphasized high volatility and potential cascading effects.
+\item Claude identified structural industrial adaptation and long-term constraints.
+\item Copilot declined full evaluation due to insufficient hypothesis specification.
+\end{itemize}
+
+\subsection{Interpretation}
+
+The divergence revealed three distinct layers:
+
+\begin{itemize}
+\item Empirical signals (market volatility)
+\item Structural interpretation (industrial adaptation)
+\item Methodological constraint (insufficient hypothesis definition)
+\end{itemize}
+
+The refusal of one model functioned as a meta-signal, indicating incomplete operationalization of hypotheses.
+
+\subsection{Outcome}
+
+The synthesized result was a cautious interpretation:
+no immediate investment decision recommended due to unresolved uncertainty and incomplete hypothesis specification.
+
+This case illustrates:
+
+\begin{itemize}
+\item Divergence as a diagnostic signal
+\item Model refusal as methodological feedback
+\item Structured synthesis under uncertainty
+\end{itemize}
+
+This does not constitute formal validation but demonstrates feasibility.
+
+\section{Didactic Implications}
+
+The method supports:
+
+\begin{itemize}
+\item perspective comparison
+\item bias awareness
+\item reflective reasoning
+\end{itemize}
+
+It is suitable for vocational and higher education contexts.
+
+\section{Limitations}
+
+\begin{itemize}
+\item No validation of external reality
+\item Dependence on model quality
+\item Sensitivity to hypothesis formulation
+\item Human interpretation required
+\end{itemize}
+
+\section{Conclusion}
+
+The method provides a structured way to analyze divergence in LLM outputs.
+It does not generate truth but exposes uncertainty and supports justified decision-making.
+
+\section{Availability}
+
+Released as Version 1.1-Open.
+
+\section{Citation}
+
+Schult, D. (2026). 
+Triangulation nach Schult: A Structured Multi-Agent Protocol for Divergence Analysis and Human-Centered Synthesis.
+
+\end{document}
