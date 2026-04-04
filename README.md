@@ -24,7 +24,18 @@ The method is:
 - didactically applicable  
 - open‑source  
 
----
+## 🔬 Novelty Claim
+Unlike classical triangulation, Delphi methods, or ensemble approaches, 
+this framework does not aim to reduce disagreement.
+
+Instead, it operationalizes divergence as a primary analytical signal 
+through:
+- role-based multi-agent decomposition
+- explicit falsification thresholds
+- structured divergence mapping
+- mandatory human synthesis with justification
+
+This combination does not exist in this form in current AI evaluation or decision frameworks.
 
 ## 🛠 The 6‑Phase Protocol (P1–P6)
 
