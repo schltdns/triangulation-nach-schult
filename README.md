@@ -89,6 +89,7 @@ graph TD
     class S1,S2,S4,S6 stage;
     class S5 human;
     class S3,M1,M2,M3 models;
+
 📚 Real‑World Case Study
 Energy Market 2026 — Hormuz Crisis (TTF Gas) Models used: Grok (Signal), Claude (Boundaries), Copilot (Dynamics).
 
