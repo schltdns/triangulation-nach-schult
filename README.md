@@ -95,7 +95,7 @@ GitHub: [@schltdns](https://github.com/schltdns)
 If you use this framework in research or industry, please cite:
 
 > Schult, D. (2026). *DNS — Divergence-based Navigation System: A Recursive Multi‑Agent Framework for Robust Decision‑Making under Epistemic Uncertainty.*  
-> GitHub: https://github.com/schltdns/triangulation-nach-schult  
+> GitHub: https://github.com/schltdns/divergence-navigation-system  
 > arXiv: cs.AI (Preprint submitted)
 
 ---
