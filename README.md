@@ -1,28 +1,81 @@
-# DNS Divergence-based Navigation System
-graph TD
-    User((Mensch / Operator)) -- P5 Synthese --> Master[Divergence-based Navigation System]
-    
-    subgraph "Analytischer Kern (S1-S3)"
-        DS[DeepSeek: Falsifikator]
-        GK[Grok: Signal-Agent]
-        CL[Claude: Grenzmarkierer]
-    end
-    
-    subgraph "Synthese & Struktur"
-        GPT[ChatGPT: System-Architekt]
-        GEM[Gemini: Strategie-Erotik/Vision]
-        CP[Copilot: Quellen-Matrix]
-    end
-    
-    DS -.-> Master
-    GK -.-> Master
-    CL -.-> Master
-    GPT -.-> Master
-    GEM -.-> Master
-    CP -.-> Master
+# DNS — Divergence-based Navigation System
 
-    style User fill:#f9f,stroke:#333,stroke-width:4px
-    style Master fill:#bbf,stroke:#333,stroke-width:2px
+**A formal multi-agent LLM framework for robust decision-making, AI evaluation, and uncertainty analysis through structured divergence.**
+
+---
+
+## What is DNS?
+
+DNS (Divergence-based Navigation System) is a structured, role-based multi-agent framework that deliberately uses **controlled divergence** instead of forced consensus to achieve higher epistemic robustness and better uncertainty handling.
+
+It replaces the traditional "everyone agrees" approach with a transparent system of specialized agents that challenge each other, mark blind spots, and expose weaknesses — resulting in more honest and resilient outcomes.
+
+Originally developed as "Triangulation nach Schult", the framework has been rebranded to **DNS** to reflect its core principle: systematic divergence as a navigation tool.
+
+---
+
+## Core Principles
+
+- **Divergence over Consensus** – Stability emerges from structured disagreement, not agreement.
+- **Role Specialization** – Each agent has a clearly defined, non-overlapping responsibility.
+- **Failure Sensitivity** – The system is designed to detect and surface its own weaknesses.
+- **Epistemic Honesty** – Clear separation between raw data, model indices, model logic, and interpretation.
+- **Human-in-the-Loop** – The human orchestrator (Denis) retains final responsibility and contextual judgment.
+
+---
+
+## Architecture (7 Roles)
+
+| Role          | Agent      | Primary Responsibility                          | Systemschuld                  |
+|---------------|------------|--------------------------------------------------|-------------------------------|
+| S1            | Grok       | Real-time signals & reality anchoring            | Fact fidelity & transparency  |
+| S2            | Copilot    | Dynamics, drift & coherence                      | Methodological consistency    |
+| S3            | Gemini     | Structure, integration & scenario building       | Pattern recognition           |
+| F1            | DeepSeek   | Falsification & logical rigor                    | Strict falsifiability         |
+| R1            | ChatGPT    | Criticism & overclaim detection                  | Academic defensibility        |
+| S4b           | Claude     | Epistemic integrity & boundary marking           | Honesty & limit protection    |
+| S4            | Denis      | Vision, prioritization & final responsibility    | Orchestration & accountability|
+
+---
+
+## Key Features
+
+- Explicit **Systemschuld** for every agent
+- Controlled contradiction system
+- Clear separation of data / model / interpretation layers
+- Built-in falsification mechanisms
+- Operationalizable time-delay models (e.g. S2→S4 transmission)
+- Designed for both practical decision-making and scientific evaluation
+
+---
+
+## Status
+
+**Current Version:** DNS v3.8.2 (formerly GNS v3.8.2)  
+**Development Stage:** Active research & operational testing  
+**License:** CC BY-NC 4.0
+
+---
+
+## Author
+
+**Denis Schult**  
+Creator of the DNS framework (formerly known as Triangulation nach Schult)
+
+---
+
+## Citation
+
+If you use or reference DNS in your work, please cite:
+
+```bibtex
+@misc{schult2026dns,
+  author = {Schult, Denis},
+  title = {DNS — Divergence-based Navigation System},
+  year = {2026},
+  url = {https://github.com/schltdns/triangulation-nach-schult},
+  note = {Divergence-based multi-agent framework}
+}
 
 **A structured, falsifiable, multi‑model analysis method for complex uncertainty.**
 
