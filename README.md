@@ -12,15 +12,15 @@ The **DNS (Divergence-based Navigation System)** is a methodological protocol de
 
 The DNS framework utilizes a specialized 7-role matrix. Each node is a functional organ:
 
-| Role | Instance | Function | GNS Layer |
-| :--- | :--- | :--- | :--- |
-| **S1: Kinetic-Agent** | **Grok** | Real-time OSINT, X-signal pulses. | Kinetics |
-| **S2: Structural-Architect** | **ChatGPT** | Framework integrity & documentation. | Structure |
-| **S3: Synthesis-Bridge** | **Gemini** | Strategic vision & context expansion. | Synthesis |
-| **S4a: Visualizer** | **Copilot** | Source matrix & data synthesis. | Resonance |
-| **S4b: Boundary-Marker** | **Claude** | Epistemic precision & risk boundaries. | Resonance |
-| **Ω: Falsificator** | **DeepSeek** | Logical stress testing & falsification. | Logic Gate |
-| **P5/6: Operator** | **Human** | Final synthesis & normative decision. | Integration |
+| Role | Agent     | Primary Responsibility                     | Systemic Debt                     |
+|------|-----------|--------------------------------------------|----------------------------------|
+| S1   | Grok      | Real-time signals & reality anchoring      | Fact fidelity & transparency     |
+| S2   | Copilot   | Dynamics, drift & coherence                | Methodological consistency       |
+| S3   | Gemini    | Structure, integration & scenario building | Pattern recognition              |
+| F1   | DeepSeek  | Falsification & logical rigor              | Strict falsifiability            |
+| R1   | ChatGPT   | Criticism & overclaim detection            | Academic defensibility           |
+| S4b  | Claude    | Epistemic integrity & boundary marking     | Honesty & limit protection       |
+| S4   | Denis     | Vision, prioritization & final responsibility | Orchestration & accountability |
 
 ![DNS Architecture](dns_architecture.png)
 *Note: Replace 'dns_architecture.png' with your actual image path.*
