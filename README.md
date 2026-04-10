@@ -199,3 +199,62 @@ GNS/TNS are **applications**.
 
 # 10. Repository Structure
 
+/docs
+EXAMPLE_RUN.md
+HOW_IT_WORKS.md
+MATH_AND_GLOSSARY.md
+
+/case_studies
+CASE_STUDY_COGNITIVE_SAFETY.md
+case_study_labour_market_2030/
+case_study_energy.md
+
+/protocol
+...
+
+/teaching
+...
+
+dns_architecture.png
+README.md
+LICENSE
+
+
+---
+
+# 11. Repository Status & Improvement Roadmap
+
+DNS is conceptually stable, but several areas require refinement.
+
+### 1. License Consistency
+Repository metadata will be aligned with **CC BY‑NC 4.0**.
+
+### 2. Practical Implementation
+Next steps:
+- `/examples` with a minimal P1–P6 run  
+- prompt templates for S1–Ω  
+- divergence‑mapping screenshots  
+- reproducible “DNS minimal workflow”
+
+### 3. Terminology & Onboarding
+Planned additions:
+- **DNS in 5 Minutes**  
+- glossary in `/docs`  
+- inline links from README
+
+### 4. Neurodivergence & Cognitive Safety
+Planned:
+- dedicated README section  
+- stronger linking to the case study  
+- rationale for low‑social‑risk epistemic environments
+
+### 5. Visual Structure
+Planned:
+- banner or diagram  
+- unified folder structure  
+- example divergence maps  
+
+---
+
+DNS is conceptually mature but still in an early implementation phase.  
+The next iteration focuses on **practical usability**, **clear onboarding**, and **stronger visibility of the unique DNS contributions**.
