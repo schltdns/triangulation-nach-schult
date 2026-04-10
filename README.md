@@ -153,13 +153,13 @@ These are not errors — they are **epistemic signals**.
 DNS is validated through multiple documented case studies:
 
 - **Cognitive Safety & Neurodiversity**  
-  `case_studies/CASE_STUDY_COGNITIVE_SAFETY.md`
+[Cognitive Safety & Neurodiversity](case_studies/CASE_STUDY_COGNITIVE_SAFETY.md)
 
 - **Labor Market 2030 (AI & Skilled Labor)**  
-  `case_studies/case_study_labour_market_2030.md`
+[Labor Market 2030 (AI & Skilled Labor)](case_studies/case_study_labour_market_2030.md)
 
 - **Energy Transmission (S2→S4)**  
-  `case_studies/case_study_energy.md`
+[Energy Transmission (S2→S4)](case_studies/case_study_energy.md)
 
 Each case study demonstrates DNS in a different domain.
 
