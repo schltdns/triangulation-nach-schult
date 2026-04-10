@@ -1,4 +1,4 @@
-# Changelog – Triangulation nach Schult (TNS)
+# Changelog – Divergence based Navigation System (DNS)
 
 All notable changes to the TNS methodology, protocol, and case studies.
 
