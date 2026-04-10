@@ -60,7 +60,8 @@ DNS uses a fixed role matrix:
 | **S4 (Human)** | Denis | Final synthesis, justification, reflection |
 
 **Architecture Diagram:**  
-`dns_architecture.png`
+![DNS Architecture](https://github.com/schltdns/divergence-navigation-system/blob/main/dns_architecture.png)
+
 
 ---
 
