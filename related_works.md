@@ -1,26 +1,25 @@
 ## Related Work and Distinction
 
-The **Divergence‑based Navigation System (DNS)** – previously developed under the working title *Triangulation nach Schult* – operates at the intersection of multi‑agent LLM systems and epistemic uncertainty. To clarify its unique contribution, DNS must be distinguished from adjacent frameworks:
+DNS – originally developed under the working title *Triangulation nach Schult* – sits at the intersection of multi‑agent LLM systems and epistemic uncertainty. Its contribution becomes clear when contrasted with adjacent approaches:
 
-### **SCOUT (Uncertainty Triangulation)**
-SCOUT uses signals such as model heterogeneity and reasoning‑critique for automated error detection in clinical environments.  
-DNS differs fundamentally: it includes **Phase P6 (Meta‑Reflection)** and does not aim to “fix” the AI. Instead, DNS uses structured dissonance to **inform the human operator**, not to optimize the model.
+### SCOUT (Uncertainty Triangulation)
+SCOUT uses model heterogeneity and critique signals for automated error detection in clinical settings.  
+DNS differs fundamentally: it includes **P6 – Meta‑Reflection** and does not aim to “fix” the AI. DNS informs the human operator through structured dissonance.
 
-### **AI Council Framework**
-Traditional “Councils” orchestrate multiple LLMs to reach **consensus** through deliberation.  
-DNS takes the opposite stance: **divergence** is the primary epistemic signal.  
-Consensus often hides risk; DNS exposes it.
+### AI Council Framework
+Council‑based systems orchestrate multiple LLMs to reach **consensus**.  
+DNS treats **divergence** as the primary epistemic signal.  
+Consensus can hide risk; DNS exposes it.
 
-### **Semantic Triangulation**
-Semantic Triangulation evaluates consistency across linguistic transformations of a single model’s output.  
-DNS instead leverages the **different identities, architectures, and training biases** of independent models (e.g., Grok vs. Claude) to reveal structural blind spots.
+### Semantic Triangulation
+Semantic Triangulation evaluates consistency across linguistic transformations of a single model.  
+DNS instead leverages **architectural diversity** (e.g., Grok vs. Claude) to reveal structural blind spots.
 
-### **DelphiAgent / LLM Council‑Double Delphi**
-These approaches adapt the classical Delphi technique to iteratively converge on shared answers.  
-DNS, in contrast, is explicitly designed for **falsification (P1)** and the analysis of **unresolved gaps**, not for convergence or averaging.
+### DelphiAgent / LLM Council‑Double Delphi
+Delphi‑style systems aim for iterative convergence.  
+DNS is designed for **falsification (P1)** and the analysis of **unresolved gaps**, not for agreement or averaging.
 
 ---
 
-### **Summary**
 DNS is not a consensus‑machine.  
-It is a **diagnostic framework for uncertainty**, positioning the human operator as an active **Synthesizer** rather than a passive consumer of averaged model output.
+It is a **diagnostic framework for uncertainty**, placing the human operator in the role of an active **Synthesizer**.
