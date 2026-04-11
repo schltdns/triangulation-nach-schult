@@ -89,7 +89,7 @@ Full protocol:
 ## 🖼 Architecture Diagram
 
 The visual overview of the role matrix:  
-👉 `dns_architecture.png`
+👉 [`dns_architecture.png`](../dns_architecture.png)
 
 ---
 
