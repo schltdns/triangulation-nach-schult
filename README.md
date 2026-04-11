@@ -1,256 +1,193 @@
-# DNS — Divergence‑based Navigation System  
-*A multi‑agent epistemic protocol for structured analysis, adversarial triangulation, and decision‑making under uncertainty.*
+# DNS — Divergence Navigation System
 
-> **“Divergence is a signal, not noise.”**
+**A divergence‑based evaluation layer for epistemic uncertainty in multi‑model systems.**
 
-DNS transforms **contradictions between AI models** into **structured insight**.  
-It is a domain‑agnostic framework for analyzing complex, uncertain problems by mapping divergence, enforcing falsification, and requiring transparent human synthesis.
+> **DNS does not reduce uncertainty — it makes it visible.**
 
-DNS is not a truth machine — it is a **systemic weakness detector**.
+DNS transforms **model disagreement** into **structured epistemic insight**.  
+It is a domain‑agnostic evaluation layer that detects friction, reveals blind spots,  
+and supports transparent human‑in‑the‑loop synthesis.
+
+DNS is not a truth machine — it is a **systemic weakness detector** for AI safety, governance, and research.
 
 ---
 
-# 1. What DNS Is (Definition)
+## 🧭 What DNS Is (Overview)
 
-**DNS is a divergence‑sensitive epistemic protocol that uses multi‑model disagreement as a navigational signal for decision‑making under uncertainty.**
+DNS is a **divergence‑sensitive epistemic protocol** that uses multi‑model disagreement as a navigational signal.
 
 It enables:
 
-- structured analysis  
-- adversarial triangulation  
-- detection of blind spots, bias, and drift  
-- transparent human‑in‑the‑loop synthesis  
-- psychologically safe exploration (low‑social‑risk environment)
+- structured analysis under uncertainty  
+- adversarial triangulation across heterogeneous models  
+- detection of bias, drift, and alignment tunneling  
+- quantifiable uncertainty signals (**Δdiv**)  
+- psychologically safe exploration (low‑social‑risk environments)  
+- transparent human synthesis (operator‑in‑the‑loop)
 
-DNS is the **core method**.  
-GNS/TNS are **domain‑specific applications**.
-
----
-
-# 2. Why Divergence > Consensus
-
-Consensus hides risk.  
-Divergence reveals structure.
-
-DNS identifies:
-
-- epistemic blind spots  
-- alignment filters  
-- architectural differences  
-- normative conflicts  
-- underspecification  
-- operator bias  
-
-Contradiction is treated as **data**, not as an error.
+Full conceptual description:  
+👉 `docs/HOW_IT_WORKS.md`
 
 ---
 
-# 3. Team Architecture v1.5
+## 🎯 Why DNS matters for AI safety & governance
 
-DNS uses a fixed role matrix:
+Modern LLMs often exhibit **false consensus** due to shared training data and alignment.  
+DNS exposes this by measuring **semantic dispersion** across models.
 
-| Role | Agent | Responsibility |
-|------|--------|----------------|
-| **S1** | Grok | Real‑time signals, kinetic data |
-| **S2** | ChatGPT | Logical structure, documentation |
-| **S3** | Gemini | Strategic synthesis, long‑term framing |
-| **S4a** | Copilot | Data synthesis, tooling |
-| **S4b** | Claude | Boundary marking, underspecification detection |
-| **Ω** | DeepSeek | Falsification, stress‑testing |
-| **S4 (Human)** | Denis | Final synthesis, justification, reflection |
+DNS provides:
 
-**Architecture Diagram:**  
-![DNS Architecture](dns_architecture.png)
+- **Δdiv (Semantic Dispersion)** — proxy for epistemic uncertainty  
+- **Friction mapping** — identifies contested domains  
+- **Human‑in‑the‑loop synthesis** — the operator decides, not the system  
+- **Auditability** — relevant for safety, compliance, and regulated industries  
 
----
+Use cases:
 
-# 4. The DNS Protocol (P1–P8)
-
-DNS follows a reproducible, auditable workflow:
-
-1. **P1 — Hypothesize**  
-   Define falsifiable hypotheses.
-
-2. **P2 — Thresholds**  
-   Set measurable falsification criteria.
-
-3. **P3 — Triangulate**  
-   Run identical prompts across all agents.
-
-4. **P4 — Map Divergence**  
-   Identify substantive, methodological, normative, and architectural divergence.
-
-5. **P5 — Weighted Synthesis**  
-   Human operator integrates signals and justifies decisions.
-
-6. **P6 — External Validation**  
-   Compare synthesis with external sources.
-
-7. **P6b — Power Layer**  
-   Check control, access, profit, risk.
-
-8. **P7 — Operator Reflection**  
-   Document bias and justification.
-
-9. **P8 — Versioning**  
-   Archive all artefacts.
-
-Full walkthroughs:  
-👉 [EXAMPLE_RUN.md](docs/EXAMPLE_RUN.md)  
-👉 [HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md)
+- AI safety & interpretability  
+- Model comparison & evaluation  
+- Governance & risk documentation  
+- Research on epistemic uncertainty
 
 ---
 
-# 5. Mathematical Foundations
+## 📊 Core Metric: Divergence Delta (Δdiv)
 
-DNS includes two conceptual models that formalize divergence and transmission dynamics.  
-GitHub supports MathJax, so formulas are rendered using double‑dollar notation.
+DNS measures **epistemic friction**, not correctness.
 
-### 5.1 Divergence Delta (Δdiv)
+| Domain Type       | Δdiv (observed) | Epistemic Profile            |
+|-------------------|-----------------|------------------------------|
+| Formal Logic      | ~0.05           | Convergent                   |
+| Applied Systems   | ~0.40–0.55      | Structured Divergence        |
+| Complex Systems   | ~0.65–0.80      | Contested / High Uncertainty |
 
-$$
-\Delta_{div} = \frac{1}{n} \sum_{i=1}^{n} \frac{|M_i - \bar{M}|}{\sigma_{KRI}}
-$$
-
-This expression conceptualizes the magnitude of divergence across models, normalized by the Knowledge‑Risk‑Index (KRI).
-
-### 5.2 S2→S4 Transmission Model (GNS only)
-
-$$
-\tau_{S4} = T_{\text{threshold}} \ln(1 + \eta \cdot KRI)
-$$
-
-This model describes how epistemic load (KRI) propagates from S2 to S4 under threshold‑based amplification.
-
-Full definitions and glossary:  
-👉 [MATH_AND_GLOSSARY.md](docs/MATH_AND_GLOSSARY.md)
-
+Full benchmark:  
+👉 `BENCHMARK.md`
 
 ---
 
-# 6. Failure Modes (DNS treats them as signals)
+## ⚠️ Guardrails
 
-DNS does not hide model weaknesses — it exposes them.
-
-- **Drift** → question underspecified  
-- **Homogenisation** → false consensus  
-- **Normative filtering** → alignment bias  
-- **Refusal** → hypothesis underspecified  
-- **Overconfidence** → model hallucination  
-- **Operator bias** → must be documented in P7  
-
-These are not errors — they are **epistemic signals**.
+1. **Low Δdiv ≠ Truth** — may indicate alignment tunneling  
+2. **High Δdiv ≠ Error** — indicates competing valid perspectives  
+3. **DNS measures dispersion, not correctness** — it is an uncertainty signal  
 
 ---
 
-# 7. Case Studies
+## 🧠 Operator Principle
 
-DNS is validated through multiple documented case studies:
+> **“DNS does not tell us what is true — it shows where models stop agreeing.”**
 
-- **Cognitive Safety & Neurodiversity**  
-  [CASE_STUDY_COGNITIVE_SAFETY.md](case_studies/CASE_STUDY_COGNITIVE_SAFETY.md)
-
-- **Labor Market 2030 (AI & Skilled Labor)**  
-  [case_study_labour_market_2030.md](case_studies/case_study_labour_market_2030.md)
-
-- **Energy Transmission (S2→S4)**  
-  [case_study_energy.md](case_studies/case_study_energy.md)
-
-Each case study demonstrates DNS in a different domain.
+DNS is a **human‑centered protocol**.  
+The operator remains the final synthesizer.
 
 ---
 
-# 8. Related Work and Distinction
+## 🏗 Team Architecture (moved to separate file)
 
-DNS sits at the intersection of multi‑agent LLM systems and epistemic uncertainty. Its contribution becomes clear when contrasted with adjacent approaches:
-
-### SCOUT (Uncertainty Triangulation)
-SCOUT uses model heterogeneity and critique signals for automated error detection.  
-DNS includes **P6 – Meta‑Reflection** and informs the human operator through structured dissonance.
-
-### AI Council Framework
-Council‑based systems aim for **consensus**.  
-DNS treats **divergence** as the primary epistemic signal.
-
-### Semantic Triangulation
-Semantic Triangulation evaluates consistency within a single model.  
-DNS leverages **architectural diversity** across models.
-
-### DelphiAgent / Double‑Delphi
-Delphi‑style systems converge iteratively.  
-DNS focuses on **falsification** and unresolved gaps.
+Full description of S1–Ω roles:  
+👉 `protocol/TEAM_ARCHITECTURE.md`
 
 ---
 
-# 9. DNS vs. GNS/TNS
+## 📜 DNS Protocol (P1–P8)
 
-- **DNS** = core epistemic protocol  
-- **GNS** = geopolitical application (energy → society)  
-- **TNS** = thematic navigation system (domain‑specific)  
-
-DNS is the **method**.  
-GNS/TNS are **applications**.
+Reproducible workflow (hypothesis → triangulation → divergence mapping → synthesis → validation → reflection → versioning):  
+👉 `protocol/P1_P6_protocol.md`
 
 ---
 
-# 10. Repository Structure
+## 🧮 Mathematical Foundations
 
-/docs
-EXAMPLE_RUN.md
-HOW_IT_WORKS.md
-MATH_AND_GLOSSARY.md
-
-/case_studies
-CASE_STUDY_COGNITIVE_SAFETY.md
-case_study_labour_market_2030/
-case_study_energy.md
-
-/protocol
-...
-
-/teaching
-...
-
-dns_architecture.png
-README.md
-LICENSE
-
+Formal definitions and glossary:  
+👉 `docs/MATH_AND_GLOSSARY.md`
 
 ---
 
-# 11. Repository Status & Improvement Roadmap
+## 📦 Case Studies (linked only)
 
-DNS is conceptually stable, but several areas require refinement.
+- Cognitive Safety & Neurodiversity  
+  👉 `case_studies/case_study_cognitive_safety.md`
 
-### 1. License Consistency
-Repository metadata will be aligned with **CC BY‑NC 4.0**.
+- Labor Market 2030  
+  👉 `case_studies/case_study_labour_market_2030.md`
 
-### 2. Practical Implementation
-Next steps:
-- `/examples` with a minimal P1–P6 run  
-- prompt templates for S1–Ω  
-- divergence‑mapping screenshots  
-- reproducible “DNS minimal workflow”
-
-### 3. Terminology & Onboarding
-Planned additions:
-- **DNS in 5 Minutes**  
-- glossary in `/docs`  
-- inline links from README
-
-### 4. Neurodivergence & Cognitive Safety
-Planned:
-- dedicated README section  
-- stronger linking to the case study  
-- rationale for low‑social‑risk epistemic environments
-
-### 5. Visual Structure
-Planned:
-- banner or diagram  
-- unified folder structure  
-- example divergence maps  
+- Energy Market Dynamics  
+  👉 `case_studies/case_study_energy.md`
 
 ---
 
-DNS is conceptually mature but still in an early implementation phase.  
-The next iteration focuses on **practical usability**, **clear onboarding**, and **stronger visibility of the unique DNS contributions**.
+## 🔗 Related Work
+
+DNS complements existing frameworks:
+
+| Framework | Focus | DNS adds… |
+|----------|--------|-----------|
+| AutoGen / CrewAI | orchestration | epistemic logic |
+| Delphi method | consensus | divergence as signal |
+| Semantic Triangulation | consistency | role‑based divergence |
+| Red Teaming | adversarial probing | multi‑model disagreement |
+
+DNS is an **evaluation layer**, not a replacement.
+
+---
+
+## 📂 Repository Structure
+
+divergence-navigation-system/
+├── README.md
+├── BENCHMARK.md
+├── docs/
+│   ├── EXAMPLE_RUN.md
+│   ├── HOW_IT_WORKS.md
+│   └── MATH_AND_GLOSSARY.md
+├── protocol/
+│   └── P1_P6_protocol.md
+├── case_studies/
+│   ├── case_study_cognitive_safety.md
+│   ├── case_study_labour_market_2030.md
+│   └── case_study_energy.md
+├── teaching/
+├── templates/
+├── dns_architecture.png
+├── LICENSE
+└── whitepaper.tex
+
+Code
+
+---
+
+## 🚀 Quick Start
+
+1. Read the benchmark (`BENCHMARK.md`)  
+2. Explore the protocol (`protocol/`)  
+3. Run your own mini‑benchmark  
+4. Use templates for divergence mapping  
+
+DNS requires **no installation** — it is a human‑centered protocol.
+
+---
+
+## 📈 Roadmap
+
+- minimal reproducible example (P1–P6)  
+- divergence‑mapping templates  
+- “DNS in 5 Minutes” guide  
+- unified glossary  
+
+---
+
+## ⚖️ License
+
+**Apache‑2.0** — see `LICENSE`.
+
+---
+
+## ✍️ Author & Citation
+
+**Denis Schult**  
+Independent Researcher, Germany  
+GitHub: https://github.com/schltdns
+
+> Schult, D. (2026). *DNS — Divergence Navigation System: A divergence‑based evaluation layer for epistemic uncertainty in multi‑model systems.*  
+> GitHub: https://github.com/schltdns/divergence-navigation-system
