@@ -1,4 +1,5 @@
 # DNS — Divergence Navigation System
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19513073.svg)](https://doi.org/10.5281/zenodo.19513073)
 
 **DNS does not reduce uncertainty — it makes it visible.**
 
@@ -188,4 +189,4 @@ GitHub: https://github.com/schltdns
 
 Schult, D. (2026). DNS — Divergence Navigation System. Zenodo. https://doi.org/10.5281/zenodo.19513073
 > GitHub: https://github.com/schltdns/divergence-navigation-system
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19513073.svg)](https://doi.org/10.5281/zenodo.19513073)
+
