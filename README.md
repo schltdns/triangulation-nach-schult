@@ -16,7 +16,17 @@ It is a domain‑agnostic evaluation layer that:
 DNS is not a truth machine —  
 it is a systemic weakness detector for AI safety, governance, and research.
 
----
+## Attribution & License
+
+DNS is licensed under **Apache License 2.0** — you are free to use, modify and integrate it commercially.
+
+However, I kindly ask that any public use, derivative work, product integration, research paper or commercial application includes clear attribution:
+
+> **“Divergence Navigation System (DNS)” by Denis Schult**  
+> GitHub: https://github.com/schltdns/divergence-navigation-system  
+> Whitepaper: https://doi.org/10.5281/zenodo.19513073
+
+Thank you for respecting the origin of the framework.
 
 ## 🧭 What DNS Is (Overview)
 
