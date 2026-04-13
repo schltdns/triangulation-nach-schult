@@ -128,7 +128,7 @@ The operator remains the final synthesizer.
 ## 📜 DNS Protocol
 
 Reproducible 8‑phase workflow (P1–P8):  
-👉 [protocol.md](protocol/protocol.md)   *(If your file is still named `P1_P6_protocol.md`, you may rename it or keep the link as is – the text now says P1–P8.)*
+👉 [protocol.md](protocol/protocol.md) 
 
 ---
 
