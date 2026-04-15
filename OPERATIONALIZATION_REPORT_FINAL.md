@@ -6,10 +6,10 @@ Operationalize DNS into a practical, EU AI Act-compliant method that can be used
 Solution: Two-Layer Architecture
 Frontend – Four Questions Method (for learners)
 A simple traffic-light checklist:
-Thema getroffen? 🟢 / 🔴
-Neue Idee? 🟢 / 🟡 / 🔴
-Überprüfbar? (Zahl, Datum, Ort, Wenn-Dann) 🟢 / 🔴
-Verständlich? 👍 / 👎
+On topic? 🟢 / 🔴
+New idea? 🟢 / 🟡 / 🔴
+Verifiable? (number, date, place, if-then) 🟢 / 🔴
+Understandable? 👍 / 👎
 Good answer = 🟢 + 🟢 + 🟢 + 👍
 Backend – Safety Layer (EU AI Act compliant)
 Component	Function	AI Act Article
