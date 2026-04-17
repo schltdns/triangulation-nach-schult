@@ -132,4 +132,4 @@ Code
 ---
 
 ## ✍️ Citation
-> Schult, D. (2026). *DNS — Divergence Navigation System (v2.1)*. Zenodo. https://doi.org/10.5281/zenodo.19597808
+> Schult, D. (2026). *DNS — Divergence Navigation System (v2.1)*. Zenodo. https://doi.org/10.5281/zenodo.195
