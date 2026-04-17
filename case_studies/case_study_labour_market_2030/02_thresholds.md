@@ -15,7 +15,9 @@
 
 ## Normative Drift
 Models show architectural bias: US-trained → market-optimistic, EU-aligned → regulation-friendly
+**Operator bias documented in:** 07_reflection.md
 
 ## Falsification Criteria (from 05_synthesis.md)
 - Productivity <0.1% p.a. by 2028 → falsifies optimistic thesis
 - >2M net job losses by 2030 → falsifies transition thesis
+- Adoption of AI agents <5% in SMEs by 2027 → falsifies exponential speed thesis
