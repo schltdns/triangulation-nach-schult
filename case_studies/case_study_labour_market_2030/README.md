@@ -1,6 +1,6 @@
 # DNS Case Study: Labour Market 2030 – AI Automation & Skills Shortage
 
-**Part of the DNS (Divergence-based Navigation System) repository – Version 1.2‑Open**
+**Part of the DNS (Divergence-based Navigation System) repository – Version 2.1**
 
 > **"This case study does not show what AI says – it reveals where and why AI models disagree, and how reasoned decisions are derived from that divergence."**
 
@@ -10,82 +10,76 @@
 
 ## What this case study is
 
-This folder documents a **structured, falsifiable, multi‑model analysis** of the German labour market up to 2030 under AI automation. It serves two purposes:
+This folder documents a **structured, falsifiable, multi-model analysis** of the German labour market up to 2030 under AI automation, following the DNS Protocol P1-P8.
 
-1. **Demonstration of the DNS method** – how to apply P1‑P7, extract divergence, use the power layer, and produce a transparent synthesis.
-2. **Substantive contribution** – a robust, empirically grounded synthesis of expected labour market transformations.
+1. **Demonstration of the DNS method** – how to apply P1-P8, extract divergence, use the power layer, and produce a transparent synthesis
+2. **Substantive contribution** – a robust, empirically grounded synthesis of expected labour market transformations
 
-**Measurement basis:** Δdiv = **0.6256** (Jaccard 0.1923, Cosine 0.5564) across six models – ChatGPT, Claude, Copilot, DeepSeek, Gemini, Grok. Highest divergence: ChatGPT ↔ Gemini (0.7221).
-
----
-
-## What this case study is **not**
-
-- A simple "what ChatGPT says" summary
-- A consensus‑driven report that hides disagreement
-- A black‑box forecast – every step is documented and critique‑able
+**Measurement basis:** Δdiv = **0.6256** (Jaccard mean 0.1923, Cosine mean 0.5564) across six models – ChatGPT, Claude, Copilot, DeepSeek, Gemini, Grok. Highest pairwise divergence: ChatGPT ↔ Gemini (0.7221). Lowest: Copilot ↔ DeepSeek (0.5492).
 
 ---
 
-## Core innovation
+## Repository structure (P1-P8)
 
-> **The value is not in the synthesis alone, but in the systematic display of divergence across six independent AI models, combined with external validation and a transparent human operator layer.**
-
----
-
-## Repository structure
-
-| File / Folder | Content |
-|---------------|---------|
-| [01_problem_definition.md](./01_problem_definition.md) | Research question, A‑G dimensions, scope |
-| [02_model_outputs/](./02_model_outputs/) | Raw, unedited responses from 6 models (audit trail) |
-| [03_divergence_analysis.md](./03_divergence_analysis.md) | Divergence types (substantive/normative/didactic/architectural) |
-| [04_synthesis.md](./04_synthesis.md) | Master Frame 3.3, consensus findings, conditional statements |
-| [05_validation.md](./05_validation.md) | External checks (IAB, WEF, IW, McKinsey, BAuA) |
-| [06_power_layer.md](./06_power_layer.md) | Who controls, who accesses, who profits, who bears risks |
-| [07_reflection.md](./07_reflection.md) | Operator decisions, biases, limitations, transparency log |
-| [08_divergence_matrix.md](./08_divergence_matrix.md) | Quantitative divergence matrix and pairwise scores |
-| [09__operator_synthesis.md](./09__operator_synthesis.md) | Operator's normative stance (faster automation, lean regulation) |
-| [dns_heatmap_labour_2030.png](./dns_heatmap_labour_2030.png) | Visual Δdiv heatmap |
-| [changelog.md](./changelog.md) | Version history |
+| File / Folder | Protocol | Content |
+|---|---|---|
+| [01_hypothesis.md](./01_hypothesis.md) | P1 | Research question, A-G dimensions, scope |
+| [02_thresholds.md](./02_thresholds.md) | P2 | Falsification criteria, Δdiv thresholds |
+| [03_outputs/](./03_outputs/) | P3 | Raw, unedited responses from 6 models (audit trail) |
+| [04_divergence_map.md](./04_divergence_map.md) | P4 | Divergence types, matrix, where/why models disagree |
+| [05_synthesis.md](./05_synthesis.md) | P5 | Weighted synthesis, Master Frame 3.3, consensus findings |
+| [09__operator_synthesis.md](./09__operator_synthesis.md) | P5b | Operator's normative decision (automate faster, lean regulation) |
+| [06_validation.md](./06_validation.md) | P6 | External checks (IAB, WEF, IW, McKinsey, BAuA) |
+| [06b_power_layer.md](./06b_power_layer.md) | P6b | Who controls, who accesses, who profits, who bears risks |
+| [07_reflection.md](./07_reflection.md) | P7 | Operator decisions, biases, limitations, transparency log |
+| [08_manifest.json](./08_manifest.json) | P8 | Run manifest, IPFS CID, SHA256, reproducibility |
+| [dns_heatmap_labour_2030.png](./dns_heatmap_labour_2030.png) | – | Visual Δdiv heatmap |
+| [changelog.md](./changelog.md) | – | Version history |
 
 ---
 
-## Key findings (executive summary)
+## Key findings
 
-- **Consensus:** Job change > job loss; productivity potential 0.3–1.2% p.a. *if* organisational adaptation happens; skill shift inevitable; dual training is an advantage if modernised; social risks are real.
-- **Divergences (open):** Speed of automation (gradual vs. exponential), regulation as brake vs. protection, social mobility, mental health effects.
-- **Master question:** Does technology scale faster than social systems can adapt?
-- **Operator decision:** Automate faster, reskill consistently, keep regulation lean – see [09__operator_synthesis.md](./09__operator_synthesis.md).
-- **Falsification:** Testable criteria in [04_synthesis.md](./04_synthesis.md#synthesis-and-falsification--labour-market-2030) (e.g., productivity <0.1% by 2028 falsifies optimistic thesis).
+**Consensus:**
+- Job change > job loss; productivity potential 0.3–1.2% p.a. *if* organisational adaptation happens
+- Skill shift inevitable; dual training is an advantage if modernised
+- Social risks are real and unequally distributed
+
+**Divergences (open):**
+- **Speed:** gradual (ChatGPT, Gemini) vs exponential (Claude, DeepSeek)
+- **Regulation:** brake on innovation vs protection for workers
+- **Social mobility:** democratisation vs erosion of entry jobs
+- **Mental health:** relief vs chronic stress
+
+**Master question:** Does technology scale faster than social systems can adapt?
+
+**Operator decision:** Automate faster, reskill consistently, keep regulation lean – see [09__operator_synthesis.md](./09__operator_synthesis.md)
+
+**Falsification:** Testable criteria in [05_synthesis.md](./05_synthesis.md) (e.g., productivity <0.1% by 2028 falsifies optimistic thesis)
 
 ---
 
-## How to use this case study
+## How to use
 
-- **For researchers:** Replicate with your own models. Compare your Δdiv pattern with ours in [08_divergence_matrix.md](./08_divergence_matrix.md).
-- **For practitioners (IHK, vocational schools):** Use the three filters (adoption, qualification, institutions) plus power layer from [04_synthesis.md](./04_synthesis.md) and [06_power_layer.md](./06_power_layer.md).
-- **For method developers:** Build on the divergence measurement, falsification matrix, and operator reflection ([07_reflection.md](./07_reflection.md)).
+- **For researchers:** Replicate with your own models. Compare your Δdiv pattern with ours in [04_divergence_map.md](./04_divergence_map.md)
+- **For practitioners:** Use the three filters (adoption, qualification, institutions) plus power layer from [05_synthesis.md](./05_synthesis.md) and [06b_power_layer.md](./06b_power_layer.md)
+- **For method developers:** Build on the divergence measurement and falsification matrix
 
 ---
 
-## License
+## Open Data
 
-APACHE 2.0
+- **IPFS:** see [08_manifest.json](./08_manifest.json)
+- **Zenodo DOI:** 10.5281/zenodo.19597808
+- **License:** Code Apache-2.0, Docs CC-BY-NC-SA-4.0
 
 ---
 
 ## Citation
 
-Schult, D. (2026). *DNS (Divergence-based Navigation System): Labour Market 2030 Case Study*. GitHub. https://github.com/schltdns/divergence-navigation-system
-
----
-
-## Acknowledgements
-
-Six AI models (ChatGPT, Claude, Copilot, DeepSeek, Gemini, Grok) as specialized DNS agents. Validated against IAB, WEF, IW, McKinsey, BAuA. Method builds on Denzin (1978), Patton (1999), Reich (2008), and Popper.
+Schult, D. (2026). *DNS (Divergence-based Navigation System): Labour Market 2030 Case Study v2.1*. GitHub. https://github.com/schltdns/divergence-navigation-system
 
 ---
 
 **Last updated:** April 2026  
-**Maintainer:** Denis Schult – [GitHub: schltdns](https://github.com/schltdns)
+**Maintainer:** Denis Schult
