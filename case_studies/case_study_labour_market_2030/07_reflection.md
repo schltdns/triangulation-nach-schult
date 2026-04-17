@@ -24,10 +24,12 @@ This file documents the **decisions, assumptions, and potential biases** of the 
 ## 2. Weighting Decisions
 
 Divergences were classified ([see `03_divergence_analysis.md`](./03_divergence_analysis.md)) and weighted as follows:
-The measured Δdiv of 0.6256 (Jaccard 0.1923, Cosine 0.5564) confirmed high lexical distance despite semantic overlap, justifying the high weight assigned to normative divergences.
+
+The measured Δdiv of 0.6256 (Jaccard 0.1923, Cosine 0.5564) confirmed high lexical distance despite semantic overlap, justifying the high weight assigned to normative divergences. See [divergence heatmap](./dns_heatmap_labour_2030.png) and [divergence matrix](./08_divergence_matrix.md).
+
 | Divergence Type | Weight in Synthesis | Handling |
 |----------------|---------------------|----------|
-|Resolved by external validation ([see `05_validation.md`](./05_validation.md)). Where sources disagreed, bandwidth was used. |
+| **Substantive** (different facts/causality) | High | Resolved by external validation ([see `05_validation.md`](./05_validation.md)). Where sources disagreed, bandwidth was used. |
 | **Normative** (different values) | High | Documented as unresolved. Synthesis states the conflict and its policy implications. |
 | **Didactic** (different style/examples) | Zero | Ignored. |
 | **Architectural** (different model assumptions) | Medium | Noted, but not merged arithmetically. Used to explain persistent divergence. |
@@ -61,7 +63,7 @@ The measured Δdiv of 0.6256 (Jaccard 0.1923, Cosine 0.5564) confirmed high lexi
 - **What:** For speed of automation, social mobility, and mental health, the synthesis uses “if‑then” statements (e.g., “If agent adoption exceeds 10% by 2027 → exponential scenario”).
 - **Why:** Avoids false certainty while maintaining falsifiability.
 - **Source:** Inspired by Popperian logic – claims must be testable.
-*Normative stance on office automation is detailed in `09_operator_synthesis.md`.*
+*Normative stance on office automation is detailed in [Operator Synthesis](./09__operator_synthesis.md).*
 
 ---
 
@@ -88,7 +90,7 @@ A future critic could falsify my operator choices by showing that:
 3. **External evidence** (e.g., 2027 data showing agent adoption >10% **and** net job loss >2%) would contradict the bandwidth approach.
 4. **Power layer** assumptions (e.g., that SME access is systematically worse) could be disproven by survey data.
 
-**Invitation:** This case study is open to replication and critique. The raw data (`02_model_outputs/`) and protocols are public.
+**Invitation:** This case study is open to replication and critique. The raw data ([`02_model_outputs/`](./02_model_outputs/)) and protocols are public.
 
 ---
 
