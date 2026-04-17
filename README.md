@@ -82,7 +82,9 @@ Full benchmark: [BENCHMARK.md](./BENCHMARK.md)
 - **Δdiv**: `0.5×(1-Jaccard) + 0.5×(1-Cosine)`
 - **Four Questions Method**: frontend for learners
 - **Safety Layer**: EU-compliant backend
-- **P1–P8**: 8-step protocol
+- **P1–P8**: 8-step protocol – see [protocol/README.md](protocol/)
+
+Full: [docs/MATH_AND_GLOSSARY.md](docs/MATH_AND_GLOSSARY.md)
 
 Full: [docs/MATH_AND_GLOSSARY.md](docs/MATH_AND_GLOSSARY.md)
 
@@ -109,22 +111,15 @@ Full: [docs/MATH_AND_GLOSSARY.md](docs/MATH_AND_GLOSSARY.md)
 ---
 
 ## 📂 Structure
-
-104 Zeilen verborgen
 divergence-navigation-system/
 ├── README.md
 ├── BENCHMARK.md
 ├── OPERATIONALIZATION_REPORT.md
-├── LICENSE-CODE.txt
-├── LICENSE-DOCS.txt
-├── dns_open_data_proof.json
-├── safety_layer_schema_v2.json
-├── minimal_safety_layer.py
+├── protocol/ # P1-P8 definitions
+├── case_studies/ # Labour 2030 (v2.1), Cognitive Safety, Energy
 ├── docs/
-├── protocol/
-├── case_studies/
 ├── teaching/
-└── whitepaper/
+└── safety_layer_schema_v2.json
 
 Code
 
