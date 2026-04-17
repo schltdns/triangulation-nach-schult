@@ -63,9 +63,8 @@ Elaborate. *"Can you specify, give an example, or formulate a counter-point?"*
 4. Open-Data proof works without blockchain
 
 ## Next Steps
-- Pilot at Montessori school NRW (after Easter)
-- Legal validation by Inge Seher
-- IHK Bonn integration
+- Pilot at Montessori school
+- Legal validation by lawyer
 - Case study publication
 
 ---
