@@ -101,9 +101,10 @@ Full: [docs/MATH_AND_GLOSSARY.md](docs/MATH_AND_GLOSSARY.md)
 ---
 
 ## 📦 Case Studies
-- [Labour Market 2030](case_studies/case_study_labour_market_2030/)
-- [Cognitive Safety](case_studies/case_study_cognitive_safety.md)
-- [Energy](case_studies/case_study_energy.md)
+
+- **[Labour Market 2030](case_studies/case_study_labour_market_2030/)** – Δdiv 0.6256, first complete P1-P8 run (v2.1)
+- [Cognitive Safety](case_studies/case_study_cognitive_safety/)
+- [Energy](case_studies/case_study_energy/)
 
 ---
 
