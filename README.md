@@ -1,176 +1,115 @@
+Markdown
 # DNS — Divergence Navigation System
 
-![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19597808.svg)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19597808.svg)](https://doi.org/10.5281/zenodo.19597808)
 
 **DNS does not reduce uncertainty — it makes it visible.**
 
 A divergence-based evaluation layer for epistemic uncertainty in multi-model systems.
 
-DNS transforms model disagreement into structured epistemic insight — not to find truth,  
-but to reveal systemic weaknesses in AI reasoning, safety, and governance.
-
-It is a domain-agnostic evaluation layer that:
-- detects epistemic friction
-- reveals blind spots
-- supports transparent human-in-the-loop synthesis
-
-**DNS is not a truth machine — it is a systemic weakness detector for AI safety, governance, and research.**
+DNS transforms model disagreement into structured epistemic insight — not to find truth, but to reveal systemic weaknesses in AI reasoning, safety, and governance.
 
 ---
 
 ## Versioning and Open Data Proof
 
-- **Current version:** v2.1 (published 2026-04-15)  
-  DOI: [10.5281/zenodo.19597808](https://zenodo.org/records/19597808)  
-- **Previous version:** v2.0 – DOI: [10.5281/zenodo.19513073](https://zenodo.org/records/19513073)  
+- **Current version:** v2.1 (2026-04-15)  
+  DOI: [10.5281/zenodo.19597808](https://doi.org/10.5281/zenodo.19597808)
+- **Previous version:** v2.0 – [10.5281/zenodo.19513073](https://doi.org/10.5281/zenodo.19513073)
 - **IPFS anchor:** `bafkreiblue2cs6e4xmpbpklkswimpzgnoumszgkvcm5csukdiqhqkf7wyy`  
-  See [`dns_open_data_proof.json`](./dns_open_data_proof.json) for CID + SHA256
+  `ipfs://bafkreiblue2cs6e4xmpbpklkswimpzgnoumszgkvcm5csukdiqhqkf7wyy`  
+  See [`dns_open_data_proof.json`](./dns_open_data_proof.json)
 
 ---
 
 ## Attribution & License
 
-DNS uses **dual licensing** to protect both code and method:
-
-- **Code components** (JSON schema, Python reference implementation):  
-  [Apache License 2.0](./LICENSE-CODE) — commercial use, modification, distribution allowed.
-- **Documentation, method, teaching materials** (whitepaper, PDFs, teaching):  
-  [CC BY‑NC‑SA 4.0](./LICENSE-DOCS) — non‑commercial, share alike, attribution required.
-
-You are free to use, modify and integrate the code commercially under Apache-2.0.  
-For any public use of the **method**, derivative work, product integration, research paper or commercial application, please include clear attribution:
+**Dual licensing:**
+- **Code** (JSON schema, Python): [Apache-2.0](./LICENSE-CODE.txt)
+- **Documentation & Method**: [CC BY-NC-SA 4.0](./LICENSE-DOCS.txt)
 
 > *"Divergence Navigation System (DNS)" by Denis Schult*  
-> GitHub: https://github.com/schltdns/divergence-navigation-system  
-> Whitepaper: https://doi.org/10.5281/zenodo.19597808
-
-Thank you for respecting the origin of the framework.
+> https://github.com/schltdns/divergence-navigation-system
 
 ---
 
-## 🧭 What DNS Is (Overview)
+## 🧭 What DNS Is
 
-DNS is a divergence-sensitive epistemic protocol that uses multi-model disagreement as a navigational signal.
-
-It enables:
+DNS uses multi-model disagreement as a navigational signal for:
 - structured analysis under uncertainty
-- adversarial triangulation across heterogeneous models
-- detection of bias, drift, and alignment tunneling
-- quantifiable uncertainty signals (Δdiv)
-- psychologically safe exploration (low-social-risk environments)
-- transparent human synthesis (operator-in-the-loop)
+- detection of bias, drift, alignment tunneling
+- quantifiable uncertainty (Δdiv)
+- human-in-the-loop synthesis
 
-Full conceptual description: 👉 [HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md)
+Full description: [docs/HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md)
 
 ---
 
-## 🎯 Why DNS matters for AI safety & governance
+## 🎯 Why DNS matters
 
-DNS is **Governance by Design, not just Ethics by Declaration**.
+**Governance by Design** — not just Ethics by declaration.
 
-Modern LLMs often exhibit false consensus due to shared training data and alignment. DNS exposes this by measuring semantic dispersion across models.
-
-DNS provides:
-- **Δdiv (Semantic Dispersion)** — proxy for epistemic uncertainty
-- **Friction mapping** — identifies contested domains
-- **Human-in-the-loop synthesis** — the operator decides, not the system
-- **Auditability** — relevant for safety, compliance, and regulated industries (EU AI Act Art. 9, 13, 14, 15)
-
-**Use cases:**
-- AI safety & interpretability
-- Model comparison & evaluation
-- Governance & risk documentation
-- Research on epistemic uncertainty
+Provides:
+- **Δdiv** — semantic dispersion
+- **Friction mapping** — contested domains
+- **Auditability** — EU AI Act Art. 9, 13, 14, 15
 
 ---
 
-## 📊 Core Metric: Divergence Delta (Δdiv)
+## 📊 Core Metric: Δdiv
 
-DNS measures epistemic friction, not correctness.
-
-| Domain Type | Δdiv (observed) | Epistemic Profile |
-|-------------|----------------|--------------------|
+| Domain | Δdiv (measured) | Profile |
+|--------|-----------------|---------|
 | Formal Logic | ~0.05 | Convergent |
-| Applied Systems | ~0.40–0.55 | Structured Divergence |
-| Complex Systems | ~0.65–0.80 | Contested / High Uncertainty |
+| Applied Systems (Labour 2030) | **0.6256** | Structured Divergence |
+| Complex Systems | 0.70–0.80 | Contested |
 
-Full benchmark: 👉 [BENCHMARK.md](./BENCHMARK.md)
-
----
-
-## 🔧 Operationalization (v2.1 – new)
-
-DNS is no longer just a theoretical framework. v2.1 adds a **practical, EU AI Act‑compliant method** for schools, administrations, and companies:
-
-- **Four Questions Method** – traffic‑light checklist for learners (`vier_fragen_methode.pdf`)
-- **Safety Layer** – bias detection, formal dissent, audit trail (`safety_layer_schema_v2.json`, `minimal_safety_layer.py`)
-- **AI Act Mapping** – legal mapping to Art. 9, 13, 14, 15 (`mapping_ai_act.pdf`)
-- **Operationalization Report** – full documentation of interventions, triggers, and lessons learned ([OPERATIONALIZATION_REPORT.md](./OPERATIONALIZATION_REPORT.md))
-
-All artefacts are also available on Zenodo v2.1.
+Full benchmark: [BENCHMARK.md](./BENCHMARK.md)
 
 ---
 
-## 📖 DNS Standard Glossary & Methodological Provenance
+## 🔧 Operationalization (v2.1)
 
-To ensure methodological clarity and provenance, DNS uses a specific terminology:
+- **Four Questions Method** – `teaching/vier_fragen_methode.pdf`
+- **Safety Layer** – `safety_layer_schema_v2.json`, `minimal_safety_layer.py`
+- **AI Act Mapping** – `teaching/mapping_ai_act.pdf`
+- **Report** – [OPERATIONALIZATION_REPORT.md](./OPERATIONALIZATION_REPORT.md)
 
-- **Δdiv (Delta Divergence):** The mathematical quantification of semantic disagreement between n model outputs.  
-  `Δdiv = 1 - (Jaccard + Cosine Similarity)/2` (simplified example)
-- **Epistemic Navigation Layer:** The operative space where a human operator interacts with model divergence to produce validated insight.
-- **P1–P8 Protocol:** The standardized 8-step sequence that transforms divergence into a verified synthesis.
-- **Four Questions Method:** The operational frontend for learners (topic, novelty, verifiability, understandability).
-- **Safety Layer:** EU AI Act‑compliant backend with bias detection, formal dissent, and hash‑anchored audit trail.
+---
 
-Full glossary: 👉 [MATH_AND_GLOSSARY.md](docs/MATH_AND_GLOSSARY.md)
+## 📖 Glossary
+
+- **Δdiv**: `0.5×(1-Jaccard) + 0.5×(1-Cosine)`
+- **Four Questions Method**: frontend for learners
+- **Safety Layer**: EU-compliant backend
+- **P1–P8**: 8-step protocol
+
+Full: [docs/MATH_AND_GLOSSARY.md](docs/MATH_AND_GLOSSARY.md)
 
 ---
 
 ## ⚠️ Guardrails
-
-- **Low Δdiv ≠ Truth** — may indicate alignment tunneling
-- **High Δdiv ≠ Error** — indicates competing valid perspectives
-- **DNS measures dispersion, not correctness** — it is an uncertainty signal
+- Low Δdiv ≠ Truth
+- High Δdiv ≠ Error
+- DNS measures dispersion
 
 ---
 
 ## 🧠 Operator Principle
-
-> *"DNS does not tell us what is true — it shows where models stop agreeing."*
-
-DNS is a human-centered protocol. The operator remains the final synthesizer.
-
----
-
-## 📜 DNS Protocol
-
-Reproducible 8-phase workflow (P1–P8): 👉 [protocol.md](protocol/protocol.md)
-
----
-
-## 🧮 Mathematical Foundations
-
-Formal definitions and glossary: 👉 [MATH_AND_GLOSSARY.md](docs/MATH_AND_GLOSSARY.md)  
-Example full run (P1–P8): 👉 [EXAMPLE_RUN.md](docs/EXAMPLE_RUN.md)
+> "DNS shows where models stop agreeing."
 
 ---
 
 ## 📦 Case Studies
-
-- Cognitive Safety & Neurodiversity 👉 [case_study_cognitive_safety.md](case_studies/case_study_cognitive_safety.md)
-- Labor Market 2030 👉 [case_study_labour_market_2030.md](case_studies/case_study_labour_market_2030.md)
-- Energy Market Dynamics 👉 [case_study_energy.md](case_studies/case_study_energy.md)
-
----
-
-## 🔗 Related Work
-
-Detailed positioning: 👉 [related_works.md](related_works.md)  
-DNS is an evaluation layer, not a replacement.
+- [Labour Market 2030](case_studies/case_study_labour_market_2030/)
+- [Cognitive Safety](case_studies/case_study_cognitive_safety.md)
+- [Energy](case_studies/case_study_energy.md)
 
 ---
 
-## 📂 Repository Structure
+## 📂 Structure
+
+104 Zeilen verborgen
 divergence-navigation-system/
 ├── README.md
 ├── BENCHMARK.md
@@ -181,42 +120,21 @@ divergence-navigation-system/
 ├── safety_layer_schema_v2.json
 ├── minimal_safety_layer.py
 ├── docs/
-│ ├── EXAMPLE_RUN.md
-│ ├── HOW_IT_WORKS.md
-│ └── MATH_AND_GLOSSARY.md
 ├── protocol/
-│ └── protocol.md
 ├── case_studies/
-│ ├── case_study_cognitive_safety.md
-│ ├── case_study_labour_market_2030.md
-│ └── case_study_energy.md
 ├── teaching/
-│ ├── vier_fragen_methode.pdf
-│ └── mapping_ai_act.pdf
 └── whitepaper/
 
-text
+Code
 
 ---
 
 ## 🚀 Quick Start
-
-1. Read [BENCHMARK.md](./BENCHMARK.md) – Δdiv logic  
-2. Read [HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md) – the workflow  
-3. Read [OPERATIONALIZATION_REPORT.md](./OPERATIONALIZATION_REPORT.md) – the practical method  
-4. Run your own mini-benchmarks with your models  
-
-DNS requires no installation — it is a human-centered protocol.
+1. Read [BENCHMARK.md](./BENCHMARK.md)
+2. Read [OPERATIONALIZATION_REPORT.md](./OPERATIONALIZATION_REPORT.md)
+3. Run your own Δdiv test
 
 ---
 
-## ✍️ Author & Citation
-
-**Denis Schult**  
-Independent Researcher, Germany  
-GitHub: https://github.com/schltdns
-
-Please cite as:
-
-> Schult, D. (2026). *DNS — Divergence Navigation System (v2.1)*. Zenodo.  
-> https://doi.org/10.5281/zenodo.19597808
+## ✍️ Citation
+> Schult, D. (2026). *DNS — Divergence Navigation System (v2.1)*. Zenodo. https://doi.org/10.5281/zenodo.19597808
