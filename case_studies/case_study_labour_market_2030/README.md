@@ -28,7 +28,7 @@ This folder documents a **structured, falsifiable, multi-model analysis** of the
 | [03_outputs/](./03_outputs/) | P3 | Raw, unedited responses from 6 models (audit trail) |
 | [04_divergence_map.md](./04_divergence_map.md) | P4 | Divergence types, matrix, where/why models disagree |
 | [05_synthesis.md](./05_synthesis.md) | P5 | Weighted synthesis, Master Frame 3.3, consensus findings |
-| [09__operator_synthesis.md](./09__operator_synthesis.md) | P5b | Operator's normative decision (automate faster, lean regulation) |
+| [05b_operator_decision.md](./05b_operator_decision.md) | P5b | Operator's normative decision (automate faster, lean regulation) |
 | [06_validation.md](./06_validation.md) | P6 | External checks (IAB, WEF, IW, McKinsey, BAuA) |
 | [06b_power_layer.md](./06b_power_layer.md) | P6b | Who controls, who accesses, who profits, who bears risks |
 | [07_reflection.md](./07_reflection.md) | P7 | Operator decisions, biases, limitations, transparency log |
