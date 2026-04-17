@@ -27,7 +27,7 @@ Divergences were classified ([see `03_divergence_analysis.md`](./03_divergence_a
 The measured Δdiv of 0.6256 (Jaccard 0.1923, Cosine 0.5564) confirmed high lexical distance despite semantic overlap, justifying the high weight assigned to normative divergences.
 | Divergence Type | Weight in Synthesis | Handling |
 |----------------|---------------------|----------|
-| **Substantive** (different facts/causality) | High | Resolved by external validation (see `05_validation.md`). Where sources disagreed, bandwidth was used. |
+|Resolved by external validation ([see `05_validation.md`](./05_validation.md)). Where sources disagreed, bandwidth was used. |
 | **Normative** (different values) | High | Documented as unresolved. Synthesis states the conflict and its policy implications. |
 | **Didactic** (different style/examples) | Zero | Ignored. |
 | **Architectural** (different model assumptions) | Medium | Noted, but not merged arithmetically. Used to explain persistent divergence. |
@@ -48,7 +48,7 @@ The measured Δdiv of 0.6256 (Jaccard 0.1923, Cosine 0.5564) confirmed high lexi
 
 - **What:** The synthesis does not take a side on “brake vs. protection”.
 - **Why:** Empirical evidence on regulatory effects on innovation is mixed. This is a genuinely normative trade‑off.
-- **Transparency:** The power layer (see `06_power_layer.md`) shows who benefits from each stance.
+- The power layer ([see `06_power_layer.md`](./06_power_layer.md)) shows who benefits from each stance.
 
 ### Decision 3: Add the power layer as a fourth filter
 
