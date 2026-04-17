@@ -20,8 +20,6 @@ DNS does not seek consensus — it maps **where and why models diverge**.
 8. **P7 — Operator Reflection**
 9. **P8 — Versioning**
 
-Each phase produces auditable artifacts.
-
 ---
 
 ## P1 — Hypothesize
@@ -54,20 +52,28 @@ Four layers:
 
 ## P5 — Weighted Synthesis
 Operator integrates, weighs, justifies.
+
 **Output:** `05_synthesis.md`
 
 ## P6 — External Validation
 Compare with data, literature, experts.
+
 **Output:** `06_validation.md`
 
 ## P6b — Power Layer Check
 Who controls, benefits, bears risk, is excluded.
+
 **Output:** `06b_power_layer.md`
 
 ## P7 — Operator Reflection
 Document bias, load, uncertainty.
+
 **Output:** `07_reflection.md`
 
 ## P8 — Versioning
 Archive all artifacts with version tag (e.g., `dns_v2.1_run03`).
-**Output:** `08_manifest.json` + IPFS CID
+
+**Output:** 
+- `08_manifest.json`
+- IPFS CID (see `dns_open_data_proof.json`)
+- Zenodo DOI: https://doi.org/10.5281/zenodo.19597808
