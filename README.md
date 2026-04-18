@@ -1,3 +1,6 @@
+![DNS - Divergence Navigation System](docs/assets/dns_hero.png)
+
+# DNS v2.1
 # DNS — Divergence Navigation System
 
 **DNS does not reduce uncertainty — it makes it visible.**
