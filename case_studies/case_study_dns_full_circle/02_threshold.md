@@ -9,8 +9,8 @@
 
 DNS measures divergence as:
 
-Δdiv = 0.5 × (1 - Jaccard) + 0.5 × (1 - Cosine)
 
+$$\Delta_{div} = 0.5 \cdot (1 - \text{Jaccard}) + 0.5 \cdot (1 - \text{Cosine})$$
 
 Range: 0.00 (identical) to 1.00 (maximally divergent)
 
