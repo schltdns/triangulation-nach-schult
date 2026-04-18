@@ -5,7 +5,7 @@
 
 ## Overview
 
-All six models confirm the core hypothesis. Divergence occurs in **framing, emphasis, and operational details**, not in the fundamental mechanism.
+All six models confirm the core hypothesis. Divergence occurs in **framing, emphasis, terminology, response length, and structural depth** – not in the fundamental mechanism.
 
 ## Divergence Types
 
@@ -35,7 +35,7 @@ All six models confirm the core hypothesis. Divergence occurs in **framing, emph
 
 No resolution needed – these are documented as epistemic diversity.
 
-## Divergence Matrix
+## Divergence Matrix (Qualitative Consensus)
 
 | Dimension | ChatGPT | Claude | DeepSeek | Gemini | Grok | Copilot | Consensus |
 |-----------|---------|--------|----------|--------|------|---------|-----------|
