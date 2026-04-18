@@ -11,9 +11,7 @@
 > For classrooms and practice: four questions, traffic light, done.  
 > For research: measurable divergence (Δdiv), auditable under EU AI Act.
 
-**Version:** v2.1 (2026-04-15)  
-**DOI:** https://doi.org/10.5281/zenodo.19597808  
-**IPFS:** bafkreiblue2cs6e4xmpbpklkswimpzgnoumszgkvcm5csukdiqhqkf7wyy
+**Version:** v2.1 (2026-04-15)
 
 ---
 
@@ -58,15 +56,32 @@ $$\Delta_{div} = 0.5 \times (1 - \text{Jaccard}) + 0.5 \times (1 - \text{Cosine}
 
 ---
 
-## Quick start
-1. Read the architecture: [docs/team_architecture.md](docs/team_architecture.md)
-2. Use the schema: `safety_layer_schema_v2.json`
-3. Run the demo: `minimal_safety_layer.py`
+## Implementation Artifacts (v2.1)
+
+- [vier_fragen_methode.pdf](teaching/vier_fragen_methode.pdf)
+- [mapping_ai_act.pdf](docs/mapping_ai_act.pdf)
+- [safety_layer_schema_v2.json](src/safety_layer_schema_v2.json)
+- [minimal_safety_layer.py](src/minimal_safety_layer.py)
+- [dns_open_data_proof.json](proof/dns_open_data_proof.json)
+- [LICENSE-DOCS.txt](LICENSE-DOCS.txt) (CC BY-NC-SA 4.0)
+- [LICENSE-CODE.txt](LICENSE-CODE.txt) (Apache-2.0)
 
 ---
 
-## License
-- Code: Apache-2.0
-- Method: CC BY-NC-SA 4.0
+## Links
+
+- **Zenodo:** https://doi.org/10.5281/zenodo.19597808
+- **GitHub:** https://github.com/schltdns/divergence-navigation-system
+- **IPFS CID:** `bafkreiblue2cs6e4xmpbpklkswimpzgnoumszgkvcm5csukdiqhqkf7wyy`
+    - ipfs://bafkreiblue2cs6e4xmpbpklkswimpzgnoumszgkvcm5csukdiqhqkf7wyy
+    - https://ipfs.io/ipfs/bafkreiblue2cs6e4xmpbpklkswimpzgnoumszgkvcm5csukdiqhqkf7wyy
+    - https://dweb.link/ipfs/bafkreiblue2cs6e4xmpbpklkswimpzgnoumszgkvcm5csukdiqhqkf7wyy
+
+---
+
+## Quick start
+1. Read the architecture: [docs/team_architecture.md](docs/team_architecture.md)
+2. Use the schema: [src/safety_layer_schema_v2.json](src/safety_layer_schema_v2.json)
+3. Run the demo: [src/minimal_safety_layer.py](src/minimal_safety_layer.py)
 
 DNS provides structure, not guarantees.
