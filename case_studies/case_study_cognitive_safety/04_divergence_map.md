@@ -13,7 +13,7 @@ All six models confirm the core hypothesis. Divergence occurs in **framing, emph
 
 | Issue | Model A | Model B | Resolution |
 |-------|---------|---------|------------|
-| **Immunisation risk** | ChatGPT: "DNS scheitert nicht" is non-falsifiable | DeepSeek, Gemini, Grok: Statement is acceptable as tool property | Operator decided to keep statement but add caveat (see `05b_operator_decision.md`) |
+| **Immunisation risk** | ChatGPT: "DNS scheitert nicht" is non-falsifiable | DeepSeek, Gemini, Grok: Statement is acceptable as tool property | Operator decided to keep statement but add caveat (see [05b_operator_decision.md](./05b_operator_decision.md)) |
 | **Operator failure vs. design failure** | ChatGPT: Design can amplify/dampen operator failure | Others: Failure is exclusively operator error | Synthesised as: "DNS is robust; primary failure mode is operator, but design matters" |
 
 ### 2. Normative Divergence (value-based differences)
@@ -46,17 +46,20 @@ No resolution needed – these are documented as epistemic diversity.
 | Operator failure only | ⚠️ | ✅ | ✅ | ✅ | ✅ | ✅ | **Medium** |
 | Empirical proof needed | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **High** |
 
-## Estimated Δdiv
+## Estimated Δdiv (Preliminary)
 
-Based on the divergence matrix: **≈0.25–0.35** (low to medium divergence).  
-All models agree on the core; differences are in nuance and framing. This is below the high‑divergence threshold (>0.6).
+**Current value: ≈0.25–0.35** (low to medium divergence)
+
+> **Note:** This value is a **qualitative estimate** based on the divergence matrix. A precise, reproducible calculation of Δdiv using Jaccard and cosine similarity on the actual model outputs (see `03_outputs/`) will be performed later with a Python script. The result will replace this estimate.
+
+Based on the divergence matrix, all models agree on the core; differences are in nuance and framing. This is below the high‑divergence threshold (>0.6).
 
 ## Implications for Synthesis
 
-- A **consensus synthesis** is possible (see `05_synthesis.md`).
+- A **consensus synthesis** is possible (see [05_synthesis.md](./05_synthesis.md)).
 - Contradictions are documented but do not invalidate the hypothesis.
-- The operator decision log (`05b_operator_decision.md`) resolves the normative divergences.
+- The operator decision log ([05b_operator_decision.md](./05b_operator_decision.md)) resolves the normative divergences.
 
 ---
 
-**Next:** `05_synthesis.md`
+**Next:** [05_synthesis.md](./05_synthesis.md)
