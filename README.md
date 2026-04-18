@@ -7,6 +7,8 @@
 
 **DNS does not reduce uncertainty — it makes it visible.**
 
+**DNS is governance by design, not just ethics by declaration.**
+
 > For classrooms and practice: four questions, traffic light, done.  
 > For research: measurable divergence (Δdiv), auditable under EU AI Act.
 
