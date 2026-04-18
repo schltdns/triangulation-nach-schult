@@ -1,48 +1,48 @@
 # 01 — Hypothesis & Falsification
 
 **Case Study:** DNS Full Circle (Self-Application)  
-**Date:** 2025-12  
+**Date:** December 2025  
 **DNS Version:** 2.1
 
 ---
 
 ## Hypothesis
 
-**H1:** Wenn das Divergence Navigation System (DNS) auf sich selbst angewendet wird, entsteht eine **contested divergence** (Δdiv > 0.78), weil verschiedene LLMs DNS aus inkompatiblen Perspektiven beschreiben (Architektur vs. Protokoll vs. Theorie vs. Praxis).
+**H1:** When the Divergence Navigation System (DNS) is applied to itself, it will produce **contested divergence** (Δdiv > 0.78) because different LLMs will describe DNS from incompatible perspectives (architecture vs. protocol vs. theory vs. practice).
 
-**H2:** Die Divergenz ist nicht zufällig, sondern strukturiert: Modelle clustern nach ihrer funktionalen Rolle (deskriptiv, operational, theoretisch).
+**H2:** The divergence is not random but structured: models will cluster by functional role (descriptive, operational, theoretical).
 
-**H3:** Trotz hoher Divergenz bleibt eine Synthese möglich, die alle sechs Perspektiven in einem kohärenten Master-Frame integriert.
+**H3:** Despite high divergence, synthesis remains possible — a human operator can integrate all six perspectives into a coherent master frame.
 
 ---
 
 ## Falsification Criteria
 
-DNS Full Circle wäre falsifiziert, wenn:
+DNS Full Circle would be falsified if:
 
-1. **Δdiv < 0.50** — Modelle konvergieren und beschreiben DNS identisch (dann wäre DNS trivial)
-2. **Δdiv > 0.95** — Modelle produzieren unverbundenen Unsinn (dann wäre DNS nicht messbar)
-3. **Keine Synthese möglich** — die sechs Perspektiven sind logisch unvereinbar
-4. **Externe Validierung < 60%** — unabhängige Reviewer erkennen DNS nicht wieder
+1. **Δdiv < 0.50** — models converge and describe DNS identically (then DNS would be trivial)
+2. **Δdiv > 0.95** — models produce disconnected nonsense (then DNS would not be measurable)
+3. **No synthesis possible** — the six perspectives are logically irreconcilable
+4. **External validation < 60%** — independent reviewers fail to recognize DNS in the synthesis
 
 ---
 
 ## Why This Test Matters
 
-DNS behauptet, Divergenz zu navigieren. Die härteste Prüfung ist die Selbstanwendung:
-- Überlebt die Methode ihre eigene Analyse?
-- Erzeugt sie nützliche Fragmentierung oder nur Chaos?
-- Kann ein Mensch die Divergenz zu einem besseren Frame synthetisieren?
+DNS claims to navigate divergence. The hardest test is self-application:
+- Does the method survive its own analysis?
+- Does it produce useful fragmentation or mere chaos?
+- Can a human synthesize the divergence into a better frame?
 
-Wenn DNS hier scheitert, ist es nur ein weiteres Prompting-Framework. Wenn es besteht, ist es ein Meta-Werkzeug.
+If DNS fails here, it is just another prompting framework. If it succeeds, it is a meta-tool for knowledge synthesis.
 
 ---
 
 ## Expected Outcome
 
-**Prediction:** Δdiv ≈ 0.80 (contested), mit klaren Clustern:
-- Struktur-Cluster: ChatGPT, Grok
-- Prozess-Cluster: DeepSeek, Copilot  
-- Theorie-Cluster: Claude, Gemini
+**Prediction:** Δdiv ≈ 0.80 (contested), with clear clusters:
+- Structure cluster: ChatGPT, Grok
+- Process cluster: DeepSeek, Copilot
+- Theory cluster: Claude, Gemini
 
-Synthese wird möglich sein durch Trennung von *Was DNS ist* (Architektur) und *Wie DNS arbeitet* (Protokoll).
+Synthesis will be possible by separating *what DNS is* (architecture) from *how DNS works* (protocol).
