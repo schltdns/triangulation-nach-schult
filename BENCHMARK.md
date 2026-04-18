@@ -15,7 +15,7 @@
 ### Domain B — Applied Systems (Labour Market 2030)
 **$\Delta_{div}$:** **0.6256**  
 **Status:** Structured Divergence  
-**Files:** [divergence matrix](case_studies/case_study_labour_market_2030/08_divergence_matrix.md) · [heatmap](case_studies/case_study_labour_market_2030/dns_heatmap_labour_2030.png) · [synthesis](case_studies/case_study_labour_market_2030/04_synthesis.md)
+**Files:** [heatmap](case_studies/case_study_labour_market_2030/dns_heatmap_labour_2030.png) · [synthesis](case_studies/case_study_labour_market_2030/04_synthesis.md)
 
 ### Domain C — Cognitive Safety
 **$\Delta_{div}$:** **0.787**  
