@@ -1,36 +1,69 @@
 # DNS — Divergence Navigation System
 
-**DNS macht Unsicherheit sichtbar – nicht kleiner.**
+**DNS does not reduce uncertainty — it makes it visible.**
 
-> Für Schule, Ausbildung, Praxis: vier Fragen, Ampel, fertig.  
-> Für Forschung: messbare Divergenz (Δdiv), auditierbar nach EU AI Act.
+> For classrooms and practice: four questions, traffic light, done.  
+> For research: measurable divergence (Δdiv), auditable under EU AI Act.
 
-**Version:** v2.1 (2026-04-15) • DOI: [10.5281/zenodo.19597808](https://doi.org/10.5281/zenodo.19597808)
+**Version:** v2.1 (2026-04-15)  
+**DOI:** https://doi.org/10.5281/zenodo.19597808  
+**IPFS:** bafkreiblue2cs6e4xmpbpklkswimpzgnoumszgkvcm5csukdiqhqkf7wyy
 
 ---
 
-## Start here – 2 Minuten
+## Start here — 2 minutes
 
-### Die Vier-Fragen-Methode
-Jede KI-Antwort wird geprüft:
+### The Four Questions Method
+Check every LLM answer:
 
 1. **On topic?** 🟢 / 🔴
 2. **New idea?** 🟢 / 🟡 / 🔴
-3. **Verifiable?** (Zahl, Datum, Ort, wenn-dann) 🟢 / 🔴
+3. **Verifiable?** (number, date, place, if-then) 🟢 / 🔴
 4. **Understandable?** 👍 / 👎
 
-**Gute Antwort = 🟢 + 🟢 + 👍**
+**Good answer = 🟢 + 🟢 + 👍**
 
-Kein Account. Keine API. Funktioniert auf Folie.  
-→ `teaching/vier_fragen_methode.pdf`
+No account. No API. Works on paper.  
+→ `teaching/four_questions_method.pdf`
 
-### Warum das reicht
-- Lehrer behalten Deutungshoheit (Art. 14 AI Act)
-- Schüler filtern Halluzinationen
-- Entscheider sehen, wo Modelle sich uneinig sind
+### Why this works
+- Teachers keep human oversight (AI Act Art. 14)
+- Students filter hallucinations
+- Decision makers see where models disagree
 
 ---
 
-## Was DNS technisch ist
+## What DNS is technically
 
-**Kernmetrik Δdiv**
+**Core metric Δdiv**
+Δdiv = 0.5 × (1 - Jaccard) + 0.5 × (1 - Cosine)
+- 0.05 = convergence
+- 0.62 = structured divergence
+- 0.78 = contested
+
+**Two layers**
+- Frontend: Four Questions
+- Backend: Safety Layer (JSON schema, hash anchors, SHAP)
+
+---
+
+## EU AI Act mapping
+
+| Art. 13 Transparency | Four Questions documented |
+| Art. 14 Human oversight | Operator justifies synthesis |
+| Art. 15 Robustness | Δdiv + falsification rules |
+
+---
+
+## Quick start
+1. Read `docs/HOW_IT_WORKS.md`
+2. Use `safety_layer_schema_v2.json`
+3. Run `minimal_safety_layer.py`
+
+---
+
+## License
+- Code: Apache-2.0
+- Method: CC BY-NC-SA 4.0
+
+DNS provides structure, not guarantees.
