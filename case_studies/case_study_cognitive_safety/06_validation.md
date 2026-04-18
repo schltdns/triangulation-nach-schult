@@ -14,7 +14,7 @@ This case study documents an **epistemic validation** through multi‑model tria
 | **Epistemic (model consensus)** | Yes (Δdiv = 0.6256, high divergence) | Yes (Δdiv = 0.787, high structural divergence) |
 | **External data (IAB, WEF, McKinsey, etc.)** | Yes – used for falsification criteria | **None available** – no independent studies on DNS and social evaluation anxiety |
 | **Peer‑reviewed publication** | No (preprint only) | No (preprint only) |
-| **Empirical pilot** | No | Planned (see below) |
+| **Empirical pilot** | No | Planned  |
 
 ## Why No External Validation Currently Exists
 
