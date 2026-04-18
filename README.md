@@ -72,7 +72,7 @@ Full benchmark: [BENCHMARK.md](./BENCHMARK.md)
 - **Four Questions Method** – `teaching/vier_fragen_methode.pdf`
 - **Safety Layer** – `safety_layer_schema_v2.json`, `minimal_safety_layer.py`
 - **AI Act Mapping** – `teaching/mapping_ai_act.pdf`
-- **Report** – [OPERATIONALIZATION_REPORT.md](./OPERATIONALIZATION_REPORT.md)
+- **Report** – [OPERATIONALIZATION_REPORT_FINAL.md](./OPERATIONALIZATION_REPORT_FINAL.md)
 
 ---
 
