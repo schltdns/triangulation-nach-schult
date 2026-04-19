@@ -44,7 +44,7 @@ the_copilot_crash/
 
 ## Delta Div (Δdiv) – The DNS Metric
 
-\Delta_{div} = \frac{1}{2}\left(1 - \frac{|A \cap B|}{|A \cup B|}\right) + \frac{1}{2}\left(1 - \frac{\mathbf{a} \cdot \mathbf{b}}{\|\mathbf{a}\| \|\mathbf{b}\|}\right)
+\Delta_{div} = \frac{1}{2} \cdot (1 - \text{Jaccard}) + \frac{1}{2} \cdot (1 - \text{Cosine})
 
 - **0.657** indicates high structural divergence – no generalization allowed.
 - Copilot's self-matrix confirms: he shares <25% semantic basis with any other model.
