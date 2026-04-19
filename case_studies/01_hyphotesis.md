@@ -30,9 +30,7 @@ Some web UIs allow this (liberal fetch policy), others block it (restrictive san
 
 ## Delta Div ($\Delta_{div}$)
 
-\[
-\Delta_{div} = 0.5 \cdot (1 - \text{Jaccard}) + 0.5 \cdot (1 - \text{Cosine})
-\]
+$\Delta_{div} = 0.5 \cdot (1 - \text{Jaccard}) + 0.5 \cdot (1 - \text{Cosine})$
 
 For this case, $\Delta_{div} = 0.657$ – high structural divergence, narrative risk.
 
