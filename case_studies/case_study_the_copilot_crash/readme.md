@@ -39,19 +39,29 @@ the_copilot_crash/
 ├── calc_delta_div.py
 ├── heatmap/
 │ └── dns_heatmap_the_copilot_crash.png
-└── readme.md
+└── readme.md````
 
-## Delta Div ($\Delta_{div}$) – The DNS Metric
 
-$$\Delta_{div} = 0.5 \cdot (1 - \text{Jaccard}) + 0.5 \cdot (1 - \text{Cosine})$$
+## Delta Div (Δdiv) – The DNS Metric
+Δdiv = 0.5 * (1 - Jaccard) + 0.5 * (1 - Cosine)
 
-- **0.742** indicates contested territory – no generalization allowed.
-- Copilot's matrix confirms: he shares <26% semantic basis with any other model.
+- 0.742 indicates contested territory – no generalization allowed
+- Copilot shares <26% semantic basis with any other model
 
 ## Implications for MSB NRW
 
-The MSB NRW has partnered with Microsoft for "KI-Skilling.NRW" – training 200,000 teachers to use Copilot. But Copilot itself produces unverified geopolitical narratives. Without DNS as an epistemic filter, schools are learning tool usage, not critical thinking.
+The MSB NRW partners with Microsoft for "KI-Skilling.NRW" – training 200,000 teachers on Copilot. Copilot produces unverified geopolitical narratives. Without DNS as epistemic filter, schools learn tool usage, not critical thinking.
 
 ## License
 
-DNS Framework – Governance by Design, not Ethics by Declaration.
+**DNS Framework – Governance by Design, not Ethics by Declaration**
+
+Copyright © 2026 Denis / DNS Project
+
+Permission is granted to use, copy, and adapt this case study for research, education, and governance purposes, provided that:
+
+1. Attribution to the DNS Framework is preserved
+2. Modifications are documented
+3. No unverified claims are presented as fact without falsification
+
+This license replaces ethics-by-declaration with verifiability-by-design.
