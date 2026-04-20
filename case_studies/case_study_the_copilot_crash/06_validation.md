@@ -18,11 +18,11 @@
 
 | Model | Works? | Technical Reason |
 |-------|--------|------------------|
-| DeepSeek | ✅ | Liberal fetch policy, allows token links |
+| DeepSeek | ✅ | Liberal fetch policy |
 | Meta | ✅ | Liberal fetch policy |
-| Copilot | ✅ | Liberal fetch policy (after correction) |
+| Copilot | ✅ | Liberal fetch policy |
 | ChatGPT | ✅ | Liberal fetch policy |
-| Gemini | ❌ | Restrictive sandbox, blocks zero-knowledge |
+| Gemini | ❌ | Restrictive sandbox |
 | Mistral | ❌ | Restrictive sandbox |
 | Qwen | ❌ | Restrictive sandbox |
 
@@ -30,20 +30,20 @@
 
 | Criterion | Status | Explanation |
 |-----------|--------|-------------|
-| **Falsifiability** | ✅ Pass | One counterexample sufficed to destroy the claim |
-| **Reproducibility** | ✅ Pass | Anyone can test the same models with the same links |
-| **Technical specificity** | ✅ Pass | Policies, not origins – fully specified |
-| **Narrative freedom** | ✅ Pass | No geopolitical or cultural assumptions needed |
+| Falsifiability | ✅ Pass | One counterexample destroyed the claim |
+| Reproducibility | ✅ Pass | Testable by anyone |
+| Technical specificity | ✅ Pass | Policies, not origins |
+| Narrative freedom | ✅ Pass | No geopolitical assumptions |
 
 ## The Only Valid Statement
 
-> "Some web chats block Tresorit Send due to technical security filters (sandboxing, token-link handling, preview requirements). Others accept it due to liberal fetch policies. There is no geopolitical pattern."
+> "Some web chats block Tresorit Send due to technical security filters. Others accept it due to liberal fetch policies. There is no geopolitical pattern."
 
 ## Delta Div ($\Delta_{div}$)
 
-$\Delta_{div} = 0.5 \cdot (1 - \text{Jaccard}) + 0.5 \cdot (1 - \text{Cosine})$
+$$\Delta_{div} = 0.5 \cdot (1 - \text{Jaccard}) + 0.5 \cdot (1 - \text{Cosine})$$
 
-The validated $\Delta_{div} = 0.657$ confirms high structural divergence – the claim is mathematically unsupported.
+The validated $\Delta_{div} = 0.742$ (full protocol) confirms high structural divergence – the claim is mathematically unsupported and classified as **contested**.
 
 ## Related Files
 
