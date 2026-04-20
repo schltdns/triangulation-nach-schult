@@ -6,10 +6,11 @@
 
 | Metric | Value |
 |--------|-------|
-| **Δdiv (pairwise divergence)** | 0.657 |
-| **Highest divergence** | Gemini ↔ Meta (0.745) |
-| **Copilot's self-declared isolation** | min Δdiv > 0.75 |
-| **Copilot ↔ Qwen** | 0.85 (total semantic breakdown) |
+| **Δdiv (pairwise divergence)** | **0.742** |
+| **Highest divergence** | Copilot ↔ Mistral (0.798) |
+| **Lowest divergence** | Gemini ↔ Meta (0.677) |
+| **Copilot's isolation** | min Δdiv = 0.742 |
+| **Average increase** | +13% vs. technical-only (0.657 → 0.742) |
 
 ## The Crash in One Sentence
 
@@ -20,39 +21,34 @@
 | DNS mechanism | Would have caught Copilot's error |
 |---------------|-----------------------------------|
 | Four Questions – "Verifiable?" | 🔴 Immediately |
-| $\Delta_{div} > 0.6$ | 🟡 "Narrative risk" label |
+| $\Delta_{div} > 0.6$ | 🟠 "Narrative risk" label |
+| Live $\Delta_{total}=0.68$ | 🟠 Warning at Turn 1 |
 | Multi-agent falsification | ✅ DeepSeek as counterexample |
 
 ## Repository Structure
-
-```
 the_copilot_crash/
-├── [01_hypothesis.md](01_hypothesis.md)
-├── [02_threshold.md](02_threshold.md)
-├── [03_outputs/](03_outputs/)
-├── [04_divergence_map.md](04_divergence_map.md)
-├── [05_synthesis.md](05_synthesis.md)
-├── [05b_operator_decision.md](05b_operator_decision.md)
-├── [06_validation.md](06_validation.md)
-├── [07_reflections.md](07_reflections.md)
-├── [08_manifest.json](08_manifest.json)
-├── [calc_delta_div.py](calc_delta_div.py)
-├── [figures/](figures/)
-│   └── [heatmap.png](figures/heatmap.png)
-└── [readme.md](readme.md)
-```
+├── 01_hypothesis.md
+├── 02_threshold.md
+├── 03_outputs/
+├── 04_divergence_map.md
+├── 05_synthesis.md
+├── 05b_operator_decision.md
+├── 06_validation.md
+├── 07_reflections.md
+├── 08_manifest.json
+├── calc_delta_div.py
+├── heatmap/
+│ └── dns_heatmap_the_copilot_crash.png
+└── readme.md
 
 ## Delta Div ($\Delta_{div}$) – The DNS Metric
 
-Δ 
-div
-​
- =0.5⋅(1−Jaccard)+0.5⋅(1−Cosine)
+$$\Delta_{div} = 0.5 \cdot (1 - \text{Jaccard}) + 0.5 \cdot (1 - \text{Cosine})$$
 
-- **0.657** indicates high structural divergence – no generalization allowed.
-- Copilot's self-matrix confirms: he shares <25% semantic basis with any other model.
+- **0.742** indicates contested territory – no generalization allowed.
+- Copilot's matrix confirms: he shares <26% semantic basis with any other model.
 
-## Implications for NRW Ministry of Education
+## Implications for MSB NRW
 
 The MSB NRW has partnered with Microsoft for "KI-Skilling.NRW" – training 200,000 teachers to use Copilot. But Copilot itself produces unverified geopolitical narratives. Without DNS as an epistemic filter, schools are learning tool usage, not critical thinking.
 
