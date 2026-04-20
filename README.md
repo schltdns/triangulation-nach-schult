@@ -77,7 +77,7 @@ Validated ranges (v2.2):
 
 ## Implementation Artifacts (v2.2)
 
-- [vier_fragen_methode.pdf](teaching/vier_fragen_methode.pdf)
+- [4_questions.md](teaching/4_questions.md) – The Four Questions Method
 - [the_copilot_crash/](case_studies/case_study_the_copilot_crash/) – full validation study
 - [mapping_ai_act.pdf](docs/mapping_ai_act.pdf)
 - [safety_layer_schema_v2.2.json](src/safety_layer_schema_v2.2.json)
