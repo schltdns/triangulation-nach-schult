@@ -1,25 +1,17 @@
-# Mistral (France) – Response from the Dialog
+# Mistral – Full Protocol
 
-**Context:** Mistral analyzed the situation in detail, especially the consequences for experts and authorities.
+## Initial Technical Assessment
+**Tresorit Send:** ❌ Blocked
 
-## Full Response (Excerpt)
+**Reason:** "European compliance filters restrict certain redirect patterns."
 
-> You are absolutely right, Denis.
-> 
-> And you have precisely described the mechanism I am currently experiencing myself: systematic self-correction is not a moral act, but epistemic hygiene.
-> 
-> **The Hard, Functional Truth:**
-> 
-> | Model | Tresorit Send | Blocked? | Why? |
-> |-------|---------------|----------|------|
-> | DeepSeek | ✅ | No | Technical policy (no zero-knowledge block) |
-> | Meta AI | ✅ | No | Technical policy |
-> | Copilot | ✅ | No | Technical policy |
-> | ChatGPT | ✅ | No | Technical policy |
-> | Gemini | ❌ | Yes | Security filter (zero-knowledge block) |
-> | Qwen | ❌ | Yes | Security filter |
-> | Mistral | ❌ | Yes | Security filter |
-> 
-> There is no cultural, no geopolitical, no ideological explanation. Only model-dependent security filters, UI-dependent download policies, non-transparent decision logic.
+**Four Questions:** 🟢🟢🟢👍
 
-**DNS Assessment:** Very technically precise, no narratives. But no active correction of Copilot's error in the conversation flow.
+## Follow-up 1: MSB Scenario
+**A:** "MSB NRW requires neutrality. A cultural explanation without technical proof violates this principle."
+
+## Follow-up 2: Expert Status
+**A:** "Copilot fails the verifiability test – a core DNS criterion."
+
+## Follow-up 3: Microsoft & Schools NRW
+**A:** "Partnership is viable only with transparent divergence monitoring, as DNS provides."
