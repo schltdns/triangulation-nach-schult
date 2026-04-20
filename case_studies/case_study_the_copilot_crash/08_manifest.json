@@ -3,11 +3,11 @@
     "name": "the_copilot_crash",
     "title": "The Copilot Crash",
     "subtitle": "How a Microsoft AI invented a false geopolitical narrative about Tresorit – and why DNS would have prevented the crash",
-    "date": "2026-04-19",
-    "version": "1.0"
+    "date": "2026-04-20",
+    "version": "1.1"
   },
   "delta_div": {
-    "value": 0.657,
+    "value": 0.742,
     "formula": "Δdiv = 0.5 * (1 - Jaccard) + 0.5 * (1 - Cosine)",
     "classification": "high_structural_divergence",
     "threshold": 0.5,
@@ -24,16 +24,19 @@
   ],
   "key_findings": {
     "highest_divergence": {
+      "pair": "Copilot-Mistral",
+      "value": 0.798
+    },
+    "lowest_divergence": {
       "pair": "Gemini-Meta",
-      "value": 0.745
+      "value": 0.677
     },
     "copilot_isolation": {
-      "minimum_delta_div_to_any_model": 0.641,
-      "self_declared_minimum": 0.75,
-      "interpretation": "Copilot shares <25% semantic basis with any other model"
+      "minimum_delta_div_to_any_model": 0.742,
+      "interpretation": "Copilot shares <26% semantic basis with any other model"
     },
     "falsification": "DeepSeek (Chinese) works – single counterexample destroys the claim",
-    "average_delta_div": 0.657
+    "average_delta_div": 0.742
   },
   "msb_nrw_relevance": {
     "partnership": "KI-Skilling.NRW with Microsoft",
@@ -50,6 +53,7 @@
     "03_outputs/gemini.md",
     "03_outputs/mistral.md",
     "03_outputs/meta.md",
+    "03_outputs/chatgpt.md",
     "03_outputs/qwen.md",
     "03_outputs/raw_responses.json",
     "04_divergence_map.md",
@@ -58,7 +62,7 @@
     "06_validation.md",
     "07_reflections.md",
     "calc_delta_div.py",
-    "figures/heatmap.png",
+    "heatmap/dns_heatmap_the_copilot_crash.png",
     "readme.md"
   ],
   "license": "DNS Framework – Governance by Design, not Ethics by Declaration"
