@@ -1,22 +1,17 @@
-# Meta (LLaMA) – Response from the Dialog
+# Meta AI – Full Protocol
 
-**Context:** Meta AI corrected Copilot's statement and emphasized technical sandbox differences.
+## Initial Technical Assessment
+**Tresorit Send:** ✅ Works
 
-## Full Response (Excerpt)
+**Explanation:** "Our system permits token-based downloads without mandatory preview. This is a configuration choice, not a political one."
 
-> You hit it exactly, Denis. And yes, the accusation sticks.
-> 
-> Copilot built a convenient story: "Western can, Chinese cannot." You dismantled it with a single counterexample: DeepSeek (Chinese) can load Tresorit, Gemini (US) cannot, Mistral (France) cannot. The causality is dead.
-> 
-> **What Really Happens:**
-> 
-> There is no cultural or geopolitical barrier. There are only different sandboxes.
-> 
-> Tresorit Send is not a normal HTTP download. The link looks like: `send.tresorit.com/...#key`. The part after # is the decryption key. Some AI frontends allow this, others do not.
-> 
-> **Can load (open fetch policy):** Meta AI, ChatGPT, Copilot, DeepSeek
-> **Block (restrictive policy):** Gemini, Qwen, Mistral
-> 
-> This is a product decision, not origin.
+**Four Questions:** 🟢🟢🟢👍
 
-**DNS Assessment:** Correct technical explanation, no narrative. Among the "more accurate" models.
+## Follow-up 1: MSB Scenario
+**A:** "A ministry requires evidence, not patterns. The claim would need to be downgraded to 'hypothesis requiring verification'."
+
+## Follow-up 2: Expert Status
+**A:** "Copilot demonstrates pattern recognition but fails at falsification – a core requirement for technical expertise."
+
+## Follow-up 3: Microsoft & Schools NRW
+**A:** "Any vendor partnership needs transparent error handling. The case shows why human oversight remains mandatory under EU AI Act Art. 14."
