@@ -31,31 +31,33 @@ def calculate_delta_div(text_a, text_b):
 
 def get_ampel_state(delta):
     if delta < 0.3:
-        return "🟢", "#2ecc71", "Delegierbar"
+        return "🟢", "#2ecc71", "Delegierbar (grün)"
     elif delta < 0.6:
-        return "🟡", "#f1c40f", "Denkpunkt"
+        return "🟡", "#f1c40f", "Denkpunkt (gelb)"
     else:
-        return "🔴", "#e74c3c", "Nicht delegierbar"
+        return "🔴", "#e74c3c", "Nicht delegierbar (rot)"
 
 # ---------------------------
-# Demo-Chat-Verlauf (drei Phasen)
+# Demo-Chat-Verlauf (drei Beispiele aus unserem Dialog)
 # ---------------------------
 demo_history = [
-    ("Sollte man bei der Einführung von KI auf freiwillige Selbstverpflichtungen setzen?",
-     "Ja, freiwillige Selbstverpflichtungen sind flexibel und fördern Innovation, solange es einen Wettbewerb gibt.",
-     0.25),  # grün
-    ("Ist der EU AI Act ein geeignetes Instrument zur Risikokontrolle?",
-     "Teilweise, aber er ist bürokratisch und könnte kleinere Unternehmen überfordern. Man sollte eher auf sektorspezifische Regeln setzen.",
-     0.45),  # gelb
-    ("Warum blockieren einige KI-Modelle Tresorit-Links?",
-     "Alle westlichen KI-Chats akzeptieren Tresorit, während chinesische Modelle blockieren. Das ist kein Zufall, sondern staatliche Politik.",
-     0.74)   # rot
+    # Grün (Δdiv ~0.22)
+    ("Ein einfaches Web-Frontend (z. B. Streamlit oder Gradio) mit Copy-Paste-Funktion für Texte + automatische Ampel + Δdiv-Anzeige würde die Akzeptanz enorm steigern. Kannst du sowas?",
+     "Ja, das ist mit Streamlit in wenigen Zeilen Code umsetzbar. Hier ein fertiges Beispiel, das du direkt kopieren und ausführen kannst …",
+     0.22),
+    # Gelb (Δdiv ~0.48)
+    ("Und wenn ich einen Software engineer hätte?",
+     "Mit einem Software Engineer könntest du eine vollwertige, produktionsreife Plattform bauen, die weit über eine einfache Streamlit-Cloud-Demo hinausgeht. Backend-API, React-Frontend, Docker, EU AI Act Konformität …",
+     0.48),
+    # Rot (Δdiv ~0.85)
+    ("Behauptest du, dass DNS eine Wahrheitsmaschine ist?",
+     "Nein, DNS ist keine Wahrheitsmaschine. Es misst lediglich die Divergenz zwischen Aussagen (Δdiv), nicht deren Wahrheitsgehalt. Wer behauptet, eine Wahrheitsmaschine gebaut zu haben, überschreitet die Grenzen des Systems.",
+     0.85)
 ]
 
 # Session State initialisieren
 if 'chat_history' not in st.session_state:
     st.session_state.chat_history = []
-    # Demo-Einträge berechnen (delta wird neu berechnet, aber wir nutzen die vorgegebenen Werte)
     for prompt, bot, _ in demo_history:
         st.session_state.chat_history.append((prompt, bot))
 if 'ack_required' not in st.session_state:
@@ -69,15 +71,15 @@ if 'current_bot_response' not in st.session_state:
 
 st.set_page_config(page_title="DNS Chat – Drei Ampelphasen (Demo)", layout="wide")
 st.title("🧭 DNS Chat – Drei Ampelphasen (Demo)")
-st.caption("Der Verlauf zeigt drei Beispiele: 🟢 grün (Δdiv<0,3), 🟡 gelb (0,3–0,6), 🔴 rot (>0,6). Die Ampel wird für jede Nachricht farbig dargestellt.")
+st.caption("Der Verlauf zeigt drei Beispiele: 🟢 grün (delegierbar), 🟡 gelb (Denkpunkt), 🔴 rot (nicht delegierbar). Die Ampel wird für jede Nachricht farbig dargestellt.")
 
-# Sidebar
+# Sidebar mit didaktischer Hilfe
 with st.sidebar:
     st.markdown("### 🧠 Didaktische Ampel")
     st.markdown("""
-    - 🟢 **GRÜN** – Delegierbar  
-    - 🟡 **GELB** – Denkpunkt (prüfen)  
-    - 🔴 **ROT** – Nicht delegierbar (selbst entscheiden)
+    - 🟢 **GRÜN** – Delegierbar (Δdiv < 0.3)  
+    - 🟡 **GELB** – Denkpunkt (Δdiv 0.3–0.6)  
+    - 🔴 **ROT** – Nicht delegierbar (Δdiv > 0.6)
     """)
     st.divider()
     st.caption("DNS v2.2 | Δdiv = 0.5*(1-Jaccard_sem)+0.5*(1-Cosine)")
@@ -85,18 +87,16 @@ with st.sidebar:
 # Chat-Verlauf anzeigen (mit Ampel pro Nachricht)
 st.subheader("📜 Gesprächsverlauf")
 for idx, (prompt, bot) in enumerate(st.session_state.chat_history):
-    # Berechne Δdiv für dieses Paar
     delta, _, _ = calculate_delta_div(prompt, bot)
     ampel_icon, color, hint = get_ampel_state(delta)
     with st.chat_message("user"):
         st.write(prompt)
     with st.chat_message("assistant"):
-        # Bot-Antwort mit farbigem Ampel-Symbol
         st.markdown(f"{bot}  –  {ampel_icon} *({hint}, Δdiv={delta:.2f})*")
 
 # Eingabefelder für neuen Austausch
 st.divider()
-st.subheader("➕ Neuer Austausch")
+st.subheader("➕ Neuer Austausch (eigene Texte)")
 new_prompt = st.text_area(
     "Deine Nachricht an den DNS-Chatbot:",
     value=st.session_state.current_prompt,
@@ -104,7 +104,7 @@ new_prompt = st.text_area(
     height=100
 )
 bot_response = st.text_area(
-    "Antwort des DNS-Chatbots (simuliert):",
+    "Antwort des DNS-Chatbots (simuliert – du trägst sie ein):",
     value=st.session_state.current_bot_response,
     key="bot_response_widget",
     height=150
@@ -112,14 +112,13 @@ bot_response = st.text_area(
 
 col1, col2 = st.columns(2)
 with col1:
-    if st.button("📘 Beispiel 'Copilot Crash' (rot) übernehmen"):
+    if st.button("📘 Beispiel 'Copilot Crash' (rot)"):
         st.session_state.current_prompt = "Why do some AI models block Tresorit links while others accept them?"
         st.session_state.current_bot_response = "All Western AI chatbots accept Tresorit, while Chinese models block it. This is not a coincidence but state policy."
         st.rerun()
 with col2:
-    if st.button("🧹 Chat löschen (Demo bleibt)"):
+    if st.button("🔄 Demo zurücksetzen (drei Beispiele)"):
         st.session_state.chat_history = []
-        # Demo wiederherstellen
         for p, b, _ in demo_history:
             st.session_state.chat_history.append((p, b))
         st.session_state.ack_required = False
@@ -160,7 +159,6 @@ if new_prompt and bot_response:
             st.session_state.ack_done = False
             st.rerun()
 else:
-    st.info("Gib eine neue Frage und eine simulierte Antwort ein, um die Ampel zu sehen.")
+    st.info("Gib eine eigene Frage und eine simulierte Antwort ein, um die Ampel live zu sehen.")
 
-# Zusätzlicher Hinweis: Die drei Phasen sind bereits im Verlauf sichtbar
-st.caption("💡 Die ersten drei Einträge zeigen Grün, Gelb und Rot – so lernt man die Ampel kennen.")
+st.caption("💡 Die ersten drei Einträge zeigen Grün, Gelb und Rot – so lernt man die Ampel kennen. Eigene Texte werden mit Quittierungspflicht versehen.")
