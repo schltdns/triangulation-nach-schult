@@ -1,30 +1,39 @@
 import streamlit as st
-import numpy as np
+import re
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from sentence_transformers import SentenceTransformer
+import nltk
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
 
-# ---------------------------
-# Lade semantisches Modell (einmalig)
-# ---------------------------
+# NLTK Daten einmalig herunterladen
 @st.cache_resource
-def load_model():
-    return SentenceTransformer('all-MiniLM-L6-v2')
+def download_nltk_data():
+    nltk.download('stopwords', quiet=True)
+    nltk.download('wordnet', quiet=True)
+    nltk.download('punkt_tab', quiet=True)
+    return stopwords.words('english'), WordNetLemmatizer()
 
-model = load_model()
+stop_words, lemmatizer = download_nltk_data()
+
+def preprocess(text):
+    # Kleinschreibung, Tokenisierung, Stoppwort-Entfernung, Lemmatisierung
+    words = re.findall(r'\b[a-zA-Z]{3,}\b', text.lower())
+    words = [lemmatizer.lemmatize(w) for w in words if w not in stop_words]
+    return ' '.join(words)
 
 def semantic_similarity(text_a, text_b):
-    emb_a = model.encode([text_a])[0]
-    emb_b = model.encode([text_b])[0]
-    # Cosine-Ähnlichkeit zwischen den Vektoren
-    sim = np.dot(emb_a, emb_b) / (np.linalg.norm(emb_a) * np.linalg.norm(emb_b))
-    return float(sim)
+    # TF-IDF + Cosine auf vorverarbeiteten Texten
+    pre_a = preprocess(text_a)
+    pre_b = preprocess(text_b)
+    if not pre_a or not pre_b:
+        return 0.0
+    vectorizer = TfidfVectorizer().fit_transform([pre_a, pre_b])
+    return cosine_similarity(vectorizer[0:1], vectorizer[1:2])[0][0]
 
 def calculate_delta_div(text_a, text_b):
-    # Nur semantische Ähnlichkeit (kein Jaccard mehr – der ist zu oberflächlich)
     cos = semantic_similarity(text_a, text_b)
-    # Δdiv = 1 - cos (wir könnten auch andere Metriken mischen, aber cos reicht für Didaktik)
-    delta = 1 - cos
-    return delta, 0.0, cos  # Jaccard nicht mehr verwendet
+    return 1 - cos, 0.0, cos
 
 def get_ampel_state(delta):
     if delta < 0.3:
@@ -33,6 +42,3 @@ def get_ampel_state(delta):
         return "🟡", "#f1c40f", "Denkpunkt"
     else:
         return "🔴", "#e74c3c", "Nicht delegierbar"
-
-# Der Rest der App (Chat-Verlauf, UI) bleibt gleich, nur die Berechnung wird ersetzt.
-# Siehe unten die vollständige Datei.
