@@ -1,4 +1,3 @@
-
 # 01_hypothesis.md – Cognitive Safety: DNS as a Low‑Social‑Risk Environment
 
 **Run:** dns_v2.1_cognitive_safety  
