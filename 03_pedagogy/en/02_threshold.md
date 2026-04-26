@@ -9,28 +9,35 @@
 | 0.5 – 0.7 | **High divergence** | **Narrative risk – do not generalize** |
 | > 0.7 | Contested | Claim is likely a hallucination |
 
-## Live-Tracking Thresholds (Process)
+## Live‑Tracking Thresholds (Process)
 
 For continuous monitoring during a conversation:
 
 | $\Delta_{total}$ Range | Status | System Action |
-|------------------------|--------|---------------|
+|------------------------|--------|----------------|
 | < 0.3 | 🟢 Convergent | Silent monitoring |
 | 0.3 – 0.5 | 🟡 Drift detected | Subtle marking – "check reasoning" |
-| 0.5 – 0.7 | 🟠 High divergence | **Explicit warning – verify before use** |
-| > 0.7 | 🔴 Contested | **Hard stop – DNS snapshot required** |
+| 0.5 – 0.7 | 🟠 High divergence | Explicit warning – verify before use |
+| > 0.7 | 🔴 Contested | Hard stop – DNS snapshot required |
 
-$$\Delta_{total} = 0.6 \cdot \Delta_{div\_semantic} + 0.4 \cdot \Delta_{div\_structural}$$
+**Calculation of $\Delta_{total}$:**
+
+\[
+\Delta_{total} = 0.6 \cdot \Delta_{div}^{semantic} + 0.4 \cdot \Delta_{div}^{structural}
+\]
+
+---
 
 ## Applied to Copilot
 
 - **$\Delta_{div} = 0.657$** → High divergence → **NARRATIVE RISK**
 - **Live status at Turn 1:** $\Delta_{total} = 0.68$ → 🟠 High divergence
-- The claim "Western can, Chinese cannot" is mathematically unsupported.
+
+The claim "Western can, Chinese cannot" is mathematically unsupported.
 
 ## The MSB NRW Threshold
 
-For a ministry (neutrality, evidence-based decision making), any $\Delta_{div} > 0.5$ requires:
+For a ministry (neutrality, evidence‑based decision making), any $\Delta_{div} > 0.5$ requires:
 
 - Explicit uncertainty marking
 - Technical alternative explanations
@@ -46,11 +53,13 @@ For live use in classrooms, any $\Delta_{total} > 0.5$ triggers:
 
 ## Delta Div ($\Delta_{div}$)
 
-$$\Delta_{div} = 0.5 \cdot (1 - \text{Jaccard}) + 0.5 \cdot (1 - \text{Cosine})$$
+\[
+\Delta_{div} = 0.5 \cdot (1 - \text{Jaccard}) + 0.5 \cdot (1 - \text{Cosine})
+\]
 
 ## Related Files
 
 - [01_hypothesis.md](01_hypothesis.md)
-- [04_divergence_map.md](04_divergence_map.md)
+- [04_divergence_map.md](../../02_infrastructure/en/divergence_metrics.md)
 - [06_validation.md](06_validation.md)
 - [07_reflections.md](07_reflections.md)
