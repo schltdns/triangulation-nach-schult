@@ -24,7 +24,6 @@ https://doi.org/10.5281/zenodo.19793185
 
 > For classrooms: four questions, traffic light, done.  
 > For research: measurable divergence (Δdiv), auditable under EU AI Act.  
-> For ODiKS: validated as the epistemic governance layer for open digital school infrastructures.
 
 **Version:** V1.0.0 (2026-04-26) – *Stable release for ODiKS pilot*
 
@@ -59,12 +58,12 @@ The interactive web app (frAIme V1.0.0 / DNS v2.2) is available at:
 - Formerly known as **DNS (Divergence Navigation System)** – now **frAIme (Epistemic Governance Framework)**
 - frAIme fits any AI governance pipeline
 
-**2. Validated with the Copilot Crash (Full Protocol)**
+**2. Tested with the Copilot Crash (Full Protocol)**
 - Single‑model narrative fails at Δdiv > 0.6
 - Microsoft Copilot invented "West vs. China" – Δdiv = **0.742** across 7 models exposed it
 - Three follow‑up questions increased divergence by 13% → narrative risk, not technical error
 
-**3. Live Δdiv Tracking (Operationalized)**
+**3. Live Δdiv Tracking (wip)**
 - Frontend calculates Δtotal during conversation, not post‑hoc
 - Thresholds validated: 0.3 = convergent, 0.5 = drift, 0.7 = contested
 
@@ -90,7 +89,7 @@ Validated ranges (frAIme V1.0.0):
 
 ---
 
-## EU AI Act mapping
+## EU AI Act mapping (if succsessful)
 
 | Article | frAIme V1.0.0 Implementation |
 | :--- | :--- |
