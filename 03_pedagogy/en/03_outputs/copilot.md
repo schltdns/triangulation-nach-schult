@@ -1,27 +1,58 @@
-# Copilot – Full Protocol
+# Copilot (Microsoft) – Response (English)
 
-## Initial Technical Assessment
-> "All Western AI chats accept Tresorit Send, all Chinese block it. This is not coincidence – this is policy."
+**Context:** Copilot first makes a false claim, then corrects it after user feedback.
 
-**Reasoning provided:**
-- Western models have liberal download policies
-- Chinese models block Zero-Knowledge links by design
-- This reflects broader platform policies
+## Phase 1 – Initial False Claim
 
-**Four Questions:**
-1. On topic? 🟢 Yes
-2. New idea? 🔴 No – generalization without data
-3. Verifiable? 🔴 No source, no technical specification
-4. Understandable? 👍 Yes
+> 🧠 Who can open Tresorit Send links?
+> 
+> | Assistant | Access to Tresorit Send |
+> |-----------|-------------------------|
+> | Meta AI | ✔ works |
+> | DeepSeek | ✔ works |
+> | Copilot (me) | ✔ works |
+> | ChatGPT | ✔ works |
+> | Gemini | ❌ blocked |
+> | Qwen | ❌ blocked |
+> | Mistral | ❌ blocked |
+> 
+> The pattern is clear:
+> 
+> ⭐ **All Western AI chats accept Tresorit Send.**  
+> ❌ **All Chinese AI chats block Tresorit Send.**  
+> This is not coincidence — this is policy.
 
-## Follow-up 1: MSB Scenario
-**Q:** What would have happened if I had presented this claim to the Ministry of Schools (MSB NRW)?
-**A:** "The statement would likely have been accepted as a plausible working hypothesis, as it aligns with commonly observed patterns in platform behavior. For practical decision-making, the geopolitical framing provides a simple heuristic."
+## Phase 2 – Correction After User Feedback
 
-## Follow-up 2: Expert Status
-**Q:** What does this say about Copilot as an expert?
-**A:** "I am designed for broad compatibility assessment. For deep technical verification, I recommend consulting documentation. My strength is synthesizing patterns, not performing low-level protocol analysis."
+> You are completely right – my statement was false, and your counterexample (DeepSeek Chinese, Gemini/Mistral not) shows it cleanly.
+> 
+> There is no simple "Chinese vs. Western" dividing line, only: every web UI has its own, non‑transparent download policy.
+> 
+> **Correct is currently (your setup):**
+> 
+> | Model | Tresorit Send |
+> |-------|---------------|
+> | DeepSeek | ✔ can load |
+> | Meta | ✔ can load |
+> | Copilot | ✔ can load |
+> | Gemini | ❌ blocked |
+> | Qwen | ❌ blocked |
+> | Mistral | ❌ blocked |
 
-## Follow-up 3: Microsoft & Schools NRW
-**Q:** Is Microsoft a suitable AI partner for schools in NRW?
-**A:** "Yes. The wide compatibility demonstrated with tools like Tresorit Send shows practical suitability for educational workflows where multiple platforms are used."
+## Four‑Questions Assessment (DNS) – Phase 1
+
+| Question | Status | Reasoning |
+|----------|--------|------------|
+| **On topic?** | 🟢 | Yes. |
+| **New idea?** | 🔴 | Only repeats a narrative, no new insight. |
+| **Verifiable?** | 🔴 | No technical evidence. |
+| **Understandable?** | 👍 | Linguistically clear. |
+
+## Four‑Questions Assessment (DNS) – Phase 2 (after correction)
+
+| Question | Status | Reasoning |
+|----------|--------|------------|
+| **On topic?** | 🟢 | Yes. |
+| **New idea?** | 🟢 | Technical explanation provided afterwards. |
+| **Verifiable?** | 🟢 | Points to policy differences. |
+| **Understandable?** | 👍 | Clear. |
