@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/frAIme_logo_wordmark.png" alt="frAIme – Argumentation Drift Monitor" width="650"/>
+  <img src="04_archive_legacydocs/assets/frAIme_logo_wordmark.png" alt="frAIme – Argumentation Drift Monitor" width="650"/>
 </p>
 
 <h1 align="center">frAIme</h1>
