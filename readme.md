@@ -104,7 +104,7 @@ Validated ranges (frAIme V1.0.0):
 
 - [4_questions.md](04_archive_legacy/teaching/4_questions.md) – The Four Questions Method
 - [Case Study "The Copilot Crash" (bilingual)](03_pedagogy/) – bereits im aktiven Ordner (nicht archiviert)
-- [Safety Layer Schema](04_archive_legacy/safety_layer_schema_v2.0.json)
+- [Safety Layer Schema](04_archive_legacy/src/safety_layer_schema_v2.json)
 - [minimal_safety_layer.py](04_archive_legacy/minimal_safety_layer.py) – with cross‑language check
 - [calc_delta_div.py](04_archive_legacy/cas_studies/case_study_the_copilot_crashcalc_delta_div.py)
 - [Open Data Proof](04_archive_legacy/proof/dns_open_data_proof.json)
