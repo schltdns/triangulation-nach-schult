@@ -1,68 +1,69 @@
 # CITATION.cff — Citation File Format v1.2.0
-# Divergence Navigation System (DNS) v2.2
-# Zenodo liest diese Datei automatisch beim Release
+# frAIme V1.0.0 (based on DNS v2.2)
+# Zenodo reads this file automatically on release
 
 cff-version: 1.2.0
-message: "Cite the Divergence Navigation System (DNS) – an epistemic protocol for making AI uncertainty visible."
+message: "Cite frAIme – the epistemic governance framework for reliable AI use in open digital infrastructures (based on the Divergence Navigation System / DNS)."
 
-title: "DNS — Divergence Navigation System"
+title: "frAIme — Epistemic Governance Framework"
 abstract: |
-  An epistemic protocol for structured divergence analysis in multi-agent LLM systems.
-  DNS does not reduce uncertainty — it makes it visible.
-  Features: (1) Static Mode: post-hoc analysis, Four Questions Method, EU AI Act compliance mapping;
-  (2) Live Protocol: real-time Δdiv tracking, streaming safety layer, proactive falsification triggers.
-  Core metric: Δdiv = 0.5·(1−Jaccard) + 0.5·(1−Cosine), validated thresholds (<0.2 convergent, >0.75 contested).
+  frAIme is an epistemic governance framework that operationalizes the EU AI Act through:
+  (1) Static Mode: post‑hoc analysis, Four Questions Method, EU AI Act compliance mapping;
+  (2) Live Protocol: real‑time Δdiv tracking, streaming safety layer, proactive falsification triggers.
+  Core metric: Δdiv = 0.5·(1−Jaccard) + 0.5·(1−Cosine), validated thresholds (<0.3 convergent, >0.7 contested).
+  frAIme is validated as the governance layer for ODiKS (Open Digital Infrastructures for school authorities)
+  but fits any AI pipeline. It is the evolution of the Divergence Navigation System (DNS).
 
 authors:
   - family-names: "Schult"
     given-names: "Denis"
 
-version: "2.2"
-date-released: 2026-04-20
+version: "1.0.0"
+date-released: 2026-04-26
 
 doi: "10.5281/zenodo.19597808"
 
-# 🔹 Dual Licensing
+# Dual Licensing
 license: "Apache-2.0 AND CC-BY-NC-SA-4.0"
 
 repository-code: "https://github.com/schltdns/divergence-navigation-system"
 url: "https://divergence-navigation-system.streamlit.app"
 
 keywords:
-  - "llm-evaluation"
   - "ai-governance"
+  - "epistemic-framework"
   - "divergence-metrics"
   - "eu-ai-act"
   - "uncertainty-quantification"
   - "multi-agent-systems"
   - "falsification"
   - "human-in-the-loop"
-  - "epistemic-uncertainty"
   - "safety-layer"
   - "dual-licensing"
   - "open-data-proof"
+  - "ODIkS"
 
-# 🔹 Lizenz-URLs
+# License URLs
 license-url:
   code: "https://github.com/schltdns/divergence-navigation-system/blob/main/LICENSE-CODE"
   docs: "https://github.com/schltdns/divergence-navigation-system/blob/main/LICENSE-DOCS"
 
-# 🔹 Open-Data Proof Referenz
+# Open‑Data Proof Reference
 related-identifiers:
   - type: IsSupplementTo
     identifier: "dns_open_data_proof.json"
     relation: "has part"
     scheme: "sha256"
 
-# 🔹 Preferred Citation (vollständig)
+# Preferred Citation
 preferred-citation:
   type: software
-  title: "DNS — Divergence Navigation System"
+  title: "frAIme — Epistemic Governance Framework"
   authors:
     - family-names: "Schult"
       given-names: "Denis"
-  version: "2.2"
+  version: "1.0.0"
   doi: "10.5281/zenodo.19597808"
-  date-released: 2026-04-20
+  date-released: 2026-04-26
   url: "https://github.com/schltdns/divergence-navigation-system"
   license: "Apache-2.0 AND CC-BY-NC-SA-4.0"
