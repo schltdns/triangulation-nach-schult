@@ -117,14 +117,13 @@ Validated ranges (frAIme V1.0.0):
 - **Zenodo:** https://doi.org/10.5281/zenodo.19597808
 - **GitHub:** https://github.com/schltdns/divergence-navigation-system (frAIme V1.0.0)
 - **IPFS CID V1.0.0:** `bafkreiblue2cs6e4xmpbpklkswimpzgnoumszgkvcm5csukdiqhqkf7wyy` (same as DNS v2.2 for now)
-- **ODIkS validation case:** [03_pedagogy/](03_pedagogy/) (bilingual case study)
 
 ---
 
 ## Quick start
 
-1. Read the architecture: [docs/team_architecture.md](docs/team_architecture.md)
-2. Try the crash: [case_studies/case_study_the_copilot_crash/readme.md](case_studies/case_study_the_copilot_crash/readme.md)
+1. Read the architecture: [04_archive_legacy/docs/team_architecture.md](docs/team_architecture.md)
+2. Try the crash: [04_archive_legacy/case_studies/case_study_the_copilot_crash/readme.md](case_studies/case_study_the_copilot_crash/readme.md)
 3. Run the demo: `python src/minimal_safety_layer.py`
 
 **frAIme provides structure, not guarantees.**
