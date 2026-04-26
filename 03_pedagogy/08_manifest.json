@@ -3,7 +3,7 @@
     "name": "the_copilot_crash",
     "title": "The Copilot Crash",
     "subtitle": "How a Microsoft AI invented a false geopolitical narrative about Tresorit – and why DNS would have prevented the crash",
-    "date": "2026-04-20",
+    "date": "2026-04-26",
     "version": "1.1"
   },
   "delta_div": {
@@ -56,13 +56,14 @@
     "03_outputs/chatgpt.md",
     "03_outputs/qwen.md",
     "03_outputs/raw_responses.json",
-    "04_divergence_map.md",
     "05_synthesis.md",
     "05b_operator_decision.md",
     "06_validation.md",
     "07_reflections.md",
     "calc_delta_div.py",
     "heatmap/dns_heatmap_the_copilot_crash.png",
+    "../02_infrastructure/de/divergence_metrics.md",
+    "../02_infrastructure/en/divergence_metrics.md",
     "readme.md"
   ],
   "license": "DNS Framework – Governance by Design, not Ethics by Declaration"
