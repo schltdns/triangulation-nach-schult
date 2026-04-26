@@ -15,12 +15,9 @@
   🔵 Understandability
 </p>
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19671856.svg)](https://doi.org/10.5281/zenodo.19671856)
+---
 
-# frAIme — Epistemic Governance Framework (V1.0.0)
-
-**frAIme makes uncertainty visible — it creates the frame for reliable AI use.**
-
+**frAIme makes uncertainty visible — it creates the frame for reliable AI use.**  
 **frAIme is governance by design, not ethics by declaration.**
 
 > For classrooms: four questions, traffic light, done.  
@@ -33,7 +30,7 @@
 
 ## Start here — 2 minutes
 
-### The Four Questions Method (unchanged from DNS)
+### The Four Questions Method
 Check every LLM answer:
 
 1. **On topic?** 🟢 / 🔴
