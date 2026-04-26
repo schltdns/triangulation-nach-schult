@@ -55,8 +55,7 @@ The interactive web app (frAIme V1.0.0 / DNS v2.2) is available at:
 
 **1. Rebranding & Strategic Positioning**
 - Formerly known as **DNS (Divergence Navigation System)** – now **frAIme (Epistemic Governance Framework)**
-- **ODIkS** (Open Digital Infrastructures for school authorities) becomes the primary validation case
-- frAIme is **not limited to ODiKS** – it fits any AI governance pipeline
+- frAIme fits any AI governance pipeline
 
 **2. Validated with the Copilot Crash (Full Protocol)**
 - Single‑model narrative fails at Δdiv > 0.6
@@ -69,7 +68,6 @@ The interactive web app (frAIme V1.0.0 / DNS v2.2) is available at:
 
 **4. Real‑world traction (unchanged)**
 - 3,270 clones / 1,126 unique cloners in 14 days (GitHub)
-- Used in MSB NRW pilot "KI‑Skilling.NRW"
 
 ---
 
