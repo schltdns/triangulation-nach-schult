@@ -123,7 +123,7 @@ Validated ranges (frAIme V1.0.0):
 ## Quick start
 
 1. Read the architecture: [04_archive_legacy/protocol/team_architecture_v_2_0.md](04_archive_legacy/protocol/team_architecture_v_2_0.md)
-2. Try the crash: 04_archive_legacy/case_studies/case_study_the_copilot_crash/readme.md](04_archive_legacy/case_studies/case_study_the_copilot_crash/readme.md)
+2. Try the crash: [04_archive_legacy/case_studies/case_study_the_copilot_crash/readme.md](04_archive_legacy/case_studies/case_study_the_copilot_crash/readme.md)
 3. Run the demo: `python 01_governance/minimal_safety_layer.py`
 
 **frAIme provides structure, not guarantees.**
