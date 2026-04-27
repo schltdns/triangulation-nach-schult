@@ -38,11 +38,6 @@ Gute Antwort = 🟢 + 👍
 
 Kein Account. Keine API. Funktioniert auf Papier.
 
-## 🚀 Live Demo
-👉 https://divergence-navigation-system.streamlit.app
-
-Teste mit eingebauten Beispielen („The Copilot Crash“) oder eigenen Texten.
-
 ## Was ist neu in V1.0.0
 1. **Rebranding:** früher DNS – jetzt frAIme (Epistemic Governance Framework)
 2. **Getestet mit Copilot Crash:** Δdiv = 0,742 deckte erfundene „West vs. China“-Narrative auf
