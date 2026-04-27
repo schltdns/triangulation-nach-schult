@@ -1,0 +1,11 @@
+{
+  "project": "DNS-Mythology AI-Learning",
+  "operator": "Denis Schult",
+  "date": "2026-04-27",
+  "protocol": "frAIme V1.0.0",
+  "steps": ["04_divergence", "05_anomaly", "05_synthesis", "05b_decision", "06_triangulation", "06_validation", "06b_power"],
+  "delta_div": {"lowest": "Qwen-Mistral 0.584", "highest": "DeepSeek-Gemini 0.759"},
+  "sources_validated": ["Harvard RCT 2025", "Turkey UPenn 2024", "Kulik & Fletcher 2016"],
+  "formal_dissent": ["NotebookLM 30-50%", "Mistral Harvard 2020"],
+  "conclusion": "High Δdiv = source asymmetry, not falsehood"
+}
