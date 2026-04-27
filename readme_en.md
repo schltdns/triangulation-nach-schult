@@ -28,9 +28,6 @@ Good answer = 🟢 + 👍
 
 No account. No API. Works on paper.
 
-## 🚀 Live Demo
-👉 https://divergence-navigation-system.streamlit.app
-
 ## What's new in V1.0.0
 1. **Rebranding:** formerly DNS – now frAIme
 2. **Tested with Copilot Crash:** Δdiv = 0.742 exposed invented narrative
