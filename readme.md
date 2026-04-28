@@ -4,13 +4,6 @@
 
 <h1 align="center">frAIme</h1>
 
-<p align="center">
-  <strong>Argumentation Drift Monitor</strong>
-</p>
-
-# frAIme
-## Argumentation Drift Monitor
-
 🟢 Topic consistency • 🟡 Idea emergence • 🔴 Verifiability • 🔵 Understandability
 
 https://doi.org/10.5281/zenodo.19793185
