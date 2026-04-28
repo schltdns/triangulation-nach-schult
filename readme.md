@@ -34,8 +34,7 @@ Kein Account. Keine API. Funktioniert auf Papier.
 ## Was ist neu in V1.0.0
 1. **Rebranding:** früher DNS – jetzt frAIme (Epistemic Governance Framework)
 2. **Getestet mit Copilot Crash:** Δdiv = 0,742 deckte erfundene „West vs. China“-Narrative auf
-3. **Live Δdiv-Tracking:** Frontend berechnet Δtotal während des Gesprächs
-4. **Reichweite:** 3.270 Clones / 1.126 Unique Cloner in 14 Tagen
+3. **Reichweite:** 6.946 Clones / 1.914 Unique Cloner in 14 Tagen
 
 ## Neue Case Study: KI-Lernen vs Frontalunterricht
 **Ersetzt den EU-AI-Act-Teil – realer Einsatz in Bildung**
