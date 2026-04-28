@@ -85,3 +85,23 @@ Code should remain forkable. The method itself should stay free for education an
 **Open-Data Proof**  
 Version v1.2 will be anchored with SHA256 hash and IPFS CID. See `dns_open_data_proof.json` (coming).
 
+> **Note – Real technical failure, hypothetical institutional context**
+>
+> The technical error described in this case study **did occur in reality**.
+> However, the institutional framing involving the MSB NRW is a
+> **hypothetical scenario** created solely for analytical and educational
+> purposes within the DNS Framework.
+>
+> There was **no collaboration** between the MSB NRW and the actual incident.
+> The scenario illustrates how such a failure *could* be evaluated within a
+> future governance context, especially given the **real cooperation between
+> MSB NRW and Microsoft** in the *KI‑Skilling.NRW* program.
+>
+> The purpose of this case study is to demonstrate:
+> - how narrative distortions can emerge,
+> - how DNS provides epistemic filtering,
+> - and how governance structures might respond to model failures.
+>
+> This document should therefore be understood as a **theoretical application
+> of a real error**, not as a description of an actual event involving the
+> MSB NRW.
