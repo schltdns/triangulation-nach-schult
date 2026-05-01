@@ -1,32 +1,94 @@
 # frAIme Protocol (P1–P8)
 
-## P1 — Hypothesize → `01_hypothesis/`
+**A reproducible, auditable workflow for argumentation drift**
+
+frAIme structures how heterogeneous models (S1–Ω) and the human operator collaborate to reveal epistemic uncertainty. It is domain-agnostic.
+
+frAIme does not seek consensus — it maps **where and why models diverge**.
+
+---
+
+## 🧭 Overview
+
+1. **P1 — Hypothesize**
+2. **P2 — Thresholds**  
+3. **P3 — Collect**
+4. **P4 — Map Divergence**
+5. **P5 — Synthesis**
+6. **P5b — Operator Decision**
+7. **P6 — Validation**
+8. **P6b — Power Layer**
+9. **P7 — Reflection**
+10. **P8 — Versioning**
+
+---
+
+## P1 — Hypothesize
 Define a falsifiable question.
+- scope, assumptions, domain
 
-## P2 — Thresholds → `02_thresholds/`
-Set falsification criteria.
+**Output:** `01_hypothesis.md`
 
-## P3 — Collect → `03_outputs/`
+## P2 — Thresholds
+Define falsification criteria.
+- Δdiv thresholds, contradiction flags
+
+**Output:** `02_thresholds.md`
+
+## P3 — Collect
 Run identical prompt across S1–Ω.
+- no cross-contamination, single-turn
 
-## P4 — Map Divergence → `04_divergence_map/`
-Δdiv = 1 - (Jaccard_sem + Cosine) / 2  
-drift = simplified term. Δdiv 0.584–0.759 in case_study_frAIme.
+**Output:** `03_outputs/S1.md` … `03_outputs/Omega.md`
+- optional: `03_outputs/graph.png` (if graph divergence needed)
 
-## P5 — Synthesis → `05_synthesis/`
+## P4 — Map Divergence
+frAIme calculates divergence:
+
+### 4.1 Semantic Divergence (Δdiv) / drift
+
+**Δdiv = 0.5·(1−Jaccard_sem) + 0.5·(1−Cosine)**
+**drift = Δdiv**
+
+where:
+- Jaccard_sem = |concepts(A) ∩ concepts(B)| / |concepts(A) ∪ concepts(B)|
+- Cosine = embedding similarity
+
+Interpretation:
+- Δdiv < 0.3 → low drift
+- 0.3–0.6 → medium drift
+- >0.7 → high drift
+
+*case_study_frAIme: Δdiv 0.584–0.759*
+
+**Output:** `04_divergence_map.md`, `heatmap.png`
+
+## P5 — Synthesis
 Integrate with Four Questions.
 
-## P5b — Operator Decision → `05b_operator_decision/`
+**Output:** `05_synthesis.md`
+
+## P5b — Operator Decision
 Human weighs and justifies.
 
-## P6 — Validation → `06_validation/`
+**Output:** `05b_operator_decision.md`
+
+## P6 — Validation
 Compare with literature.
 
-## P6b — Power Layer → `06b_power_layer/`
+**Output:** `06_validation.md`
+
+## P6b — Power Layer
 Who benefits / bears risk.
 
-## P7 — Reflection → `07_reflection/`
+**Output:** `06b_power_layer.md`
+
+## P7 — Reflection
 Document bias.
 
-## P8 — Versioning → `08_manifest_en.json`
-Archive version and DOI.
+**Output:** `07_reflection.md`
+
+## P8 — Versioning
+Archive with version tag.
+
+**Output:** `08_manifest_en.json`, `08_manifest_de.json`
