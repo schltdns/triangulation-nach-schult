@@ -74,8 +74,12 @@ High drift did **not** indicate "wrong answers" — it revealed **source scarcit
 > Δdiv/localized drift does not flag errors — it flags **where external validation (P6) and power-layer analysis (P6b) are required**.
 
 ## Technology
-**drift = Δdiv = 1 - (Jaccard_sem + Cosine) / 2**
-= 0.5·(1−Jaccard_sem) + 0.5·(1−Cosine)
+drift = Δdiv = 1 - (Jaccard_sem + Cosine) / 2
+
+Thresholds: see `config/thresholds.json`
+- <0.15 Consensus | 0.15–0.35 slight | 0.35–0.50 significant | 0.50–0.70 source asymmetry | >0.70 blind spot
+
+case_study_frAIme: 0.584–0.759 → source asymmetry to blind spot
 
 Thresholds (from P2):
 - <0.15 = Consensus
