@@ -45,31 +45,51 @@ Kein Account. Keine API. Funktioniert auf Papier.
 - **6 Modelle, gleiche Frage:** „Ist KI-Lernen effizienter?“
 - **Vier Fragen:** alle 🟢 bei „On topic“, alle 👍 bei „Verständlich“ – scheinbarer Konsens
 - **drift-Matrix:** 0,584–0,759 – hohe Divergenz trotz Einigkeit
+    - DeepSeek–Gemini: 0,759
+    - DeepSeek–Meta: 0,730
+    - NotebookLM–DeepSeek: 0,715
+    - Qwen–Mistral: 0,584 (niedrigster Wert)
 - **Triangulation:**
-    - Harvard RCT 2025 (n=194): Median 4,5 vs 3,5, Zeit 49 vs 60 Min – BESTÄTIGT
-    - Türkei UPenn 2024 (n=1.000): +48 % Übungen / −17 % Test – BESTÄTIGT
-    - Kulik & Fletcher 2016: +0,66 SD – BESTÄTIGT
+        - Harvard RCT 2025 (n=194): Median 4,5 vs 3,5, Zeit 49 vs 60 Min – BESTÄTIGT
+        - Türkei UPenn 2024 (n=1.000): +48 % Übungen / −17 % Test – BESTÄTIGT
+        - Kulik & Fletcher 2016: +0,66 SD – BESTÄTIGT
 - **Erkenntnis:** Hoher drift zeigte nicht „falsch“, sondern „quellenarm“. Nur ein Cluster lieferte Primärdaten.
 
 **frAIme-Lektion:** Plausibilität ≠ Evidenz. drift lokalisiert Prüfbedarf.
 
 ## Technik
-drift = 1 - (Jaccard_sem + Cosine) / 2
+**drift = Δdiv = 1 - (Jaccard_sem + Cosine) / 2**
+= 0,5·(1−Jaccard_sem) + 0,5·(1−Cosine)
 
-Grenzwerte:
-- <0,3 = Konvergenz
-- 0,3–0,6 = produktive Reibung
-- >0,7 = blinder Fleck
+Grenzwerte (aus P2):
+- <0,15 = Konsens
+- 0,15–0,35 = leichte Abweichung
+- >0,35 = signifikante Divergenz
+- >0,50 = Quellenasymmetrie
+- >0,70 = blinder Fleck
+
+case_study_frAIme: alle 15 Paare >0,50 → 100 % Quellenasymmetrie
 
 Zwei Ebenen: Frontend (Vier Fragen) + Backend (Safety Layer, Hash-Anker, Multi-Agent-Log)
 
-## Methode: frAIme
+## Methode: frAIme Protocol (P1–P8)
 
 frAIme adaptiert und erweitert etablierte Verfahren zur Analyse epistemischer Unsicherheit:
+
+- **P1 Hypothesize** → `01_hypothesis.md`
+- **P2 Thresholds** → `02_thresholds.md`
+- **P3 Outputs** → `03_outputs/S1.md … S6.md`, `03_outputs/graph.png` (X/Y-MDS-Plot)
+- **P4 Map Divergence** → `04_divergence_map.md`, `heatmap.png`
+- **P5 Synthesis** → `05_synthesis.md`
+- **P5b Operator Decision** → `05b_operator_decision.md`
+- **P6 Validation** → `06_validation.md`
+- **P6b Power Layer** → `06b_power_layer.md`
+- **P7 Reflection** → `07_reflection.md`
+- **P8 Versioning** → `08_manifest_de.json` / `08_manifest_en.json`
 
 - Wie Delphi strukturiert frAIme Multi-Agenten-Input über isolierte Prompts (P3) und Synthese (P5).
 - Wie MCDA nutzt frAIme gewichtete Aggregation, Gewichte kommen aber aus Divergenz-Metriken.
 - Wie Structured Expert Judgment kalibriert frAIme Beiträge, nutzt aber semantischen Drift und externe Validierung.
 - Anders als Konsensmethoden kartiert frAIme Divergenz als Signal (P4).
-- Neu sind: (1) graphbasierte Informationsfluss-Analyse, (2) Power Layer Check (P6b).
+- Neu sind: (1) graphbasierte Informationsfluss-Analyse (X/Y-Plot), (2) Power Layer Check (P6b).
 - Reproduzierbarkeit durch versionierte Artefakte (P8).
