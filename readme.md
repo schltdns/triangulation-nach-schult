@@ -74,8 +74,12 @@ Hoher drift zeigte **nicht** „falsche Antworten" — er offenbarte **Quellensc
 > Δdiv / lokalisierter drift markiert keine Fehler — er markiert, **wo externe Validierung (P6) und Power-Layer-Analyse (P6b) erforderlich sind**.
 
 ## Technik
-**drift = Δdiv = 1 - (Jaccard_sem + Cosine) / 2**
-= 0,5·(1−Jaccard_sem) + 0,5·(1−Cosine)
+drift = Δdiv = 1 - (Jaccard_sem + Cosine) / 2
+
+Schwellen: siehe `config/thresholds.json`
+- <0,15 Konsens | 0,15–0,35 leicht | 0,35–0,50 signifikant | 0,50–0,70 Quellenasymmetrie | >0,70 blinder Fleck
+
+case_study_frAIme: 0,584–0,759 → Quellenasymmetrie bis blinder Fleck
 
 Grenzwerte (aus P2):
 - <0,15 = Konsens
