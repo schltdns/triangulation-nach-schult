@@ -13,10 +13,15 @@ Frage: Wie divergieren sechs heterogene LLMs (NotebookLM, Qwen, DeepSeek, Gemini
 **Datei:** `02_thresholds.md`
 
 Aus Hypothese:
-- < 0,15 → Konsens
-- 0,15–0,35 → leichte Abweichung
-- > 0,35 → signifikante Divergenz
-- > 0,50 → Quellenasymmetrie
+## Δdiv / drift Interpretation (canonical)
+
+| Wertebereich | Label | Handlungsempfehlung |
+|-------------|-------|-------------------|
+| < 0,15 | Konsens | Keine weitere Prüfung nötig |
+| 0,15–0,35 | Leichte Abweichung | Kontext prüfen, dokumentieren |
+| 0,35–0,50 | Signifikante Divergenz | Externe Validierung (P6) anstoßen |
+| 0,50–0,70 | Quellenasymmetrie | Power Layer Check (P6b) aktivieren |
+| > 0,70 | Epistemischer blinder Fleck | F1-Trigger: DeepSeek-Intervention + Operator-Eskalation |
 
 ## P3 – Outputs
 **Ordner:** `03_outputs/`
