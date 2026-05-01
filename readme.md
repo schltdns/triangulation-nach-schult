@@ -40,22 +40,38 @@ Kein Account. Keine API. Funktioniert auf Papier.
 2. **Validiert:** case_study_frAIme zeigt drift 0,584–0,759 trotz scheinbarem Konsens
 3. **Reichweite:** 6.946 Clones / 1.914 Unique Cloner in 14 Tagen
 
-## Case Study: KI-Lernen vs Frontalunterricht
+## Case Study: KI-Lernen vs. Frontalunterricht
 
-- **6 Modelle, gleiche Frage:** „Ist KI-Lernen effizienter?“
-- **Vier Fragen:** alle 🟢 bei „On topic“, alle 👍 bei „Verständlich“ – scheinbarer Konsens
-- **drift-Matrix:** 0,584–0,759 – hohe Divergenz trotz Einigkeit
-    - DeepSeek–Gemini: 0,759
-    - DeepSeek–Meta: 0,730
-    - NotebookLM–DeepSeek: 0,715
-    - Qwen–Mistral: 0,584 (niedrigster Wert)
-- **Triangulation:**
-        - Harvard RCT 2025 (n=194): Median 4,5 vs 3,5, Zeit 49 vs 60 Min – BESTÄTIGT
-        - Türkei UPenn 2024 (n=1.000): +48 % Übungen / −17 % Test – BESTÄTIGT
-        - Kulik & Fletcher 2016: +0,66 SD – BESTÄTIGT
-- **Erkenntnis:** Hoher drift zeigte nicht „falsch“, sondern „quellenarm“. Nur ein Cluster lieferte Primärdaten.
+**Setup**: 6 Modelle, identischer Prompt: *„Ist KI-basiertes Lernen effizienter als Frontalunterricht?"*
 
-**frAIme-Lektion:** Plausibilität ≠ Evidenz. drift lokalisiert Prüfbedarf.
+**Vier-Fragen-Check**: 
+- Alle Modelle 🟢 „On topic"
+- Alle Modelle 👍 „Verständlich"
+- → *Scheinbarer Konsens auf Oberflächenebene*
+
+**drift-Matrix Ergebnisse**:
+| Modell-Paar | Δdiv | Interpretation (kanonisch) |
+|-------------|------|---------------------------|
+| DeepSeek–Gemini | 0,759 | 🔴 Epistemischer blinder Fleck (>0,70) |
+| DeepSeek–Meta | 0,730 | 🔴 Epistemischer blinder Fleck (>0,70) |
+| NotebookLM–DeepSeek | 0,715 | 🔴 Epistemischer blinder Fleck (>0,70) |
+| Qwen–Mistral | 0,584 | 🟡 Quellenasymmetrie (0,50–0,70) |
+
+**Bereich**: 0,584–0,759 → *Alle Paare zeigen mindestens Quellenasymmetrie; drei Paare überschreiten die Schwelle zum epistemischen blinden Fleck*
+
+**Externe Triangulation (P6)**:
+| Quelle | Befund | Übereinstimmung |
+|--------|--------|----------------|
+| Harvard RCT 2025 (n=194) | Median 4,5 vs. 3,5; Zeit 49 vs. 60 Min | ✅ Bestätigt Effizienzgewinn |
+| Türkei/UPenn-Studie 2024 (n=1.000) | +48 % Übungsabschluss; −17 % Testergebnisse | ✅ Bestätigt gemischte Outcomes |
+| Kulik & Fletcher 2016 (Meta) | +0,66 SD Effektstärke für adaptives Lernen | ✅ Bestätigt moderaten Vorteil |
+
+**Kern-Erkenntnis**: 
+Hoher drift zeigte **nicht** „falsche Antworten" — er offenbarte **Quellenscarcity**. Nur ein Modell-Cluster referenzierte primäre empirische Daten; andere stützten sich auf heuristische Argumentation oder Sekundärzusammenfassungen.
+
+**frAIme-Lektion**: 
+> *Plausibilität ≠ Evidenz.*  
+> Δdiv / lokalisierter drift markiert keine Fehler — er markiert, **wo externe Validierung (P6) und Power-Layer-Analyse (P6b) erforderlich sind**.
 
 ## Technik
 **drift = Δdiv = 1 - (Jaccard_sem + Cosine) / 2**
