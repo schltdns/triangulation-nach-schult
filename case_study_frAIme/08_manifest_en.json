@@ -8,4 +8,4 @@
   "sources_validated": ["Harvard RCT 2025", "Turkey UPenn 2024", "Kulik & Fletcher 2016"],
   "formal_dissent": ["NotebookLM 30-50%", "Mistral Harvard 2020"],
   "conclusion": "High Δdiv = source asymmetry, not falsehood"
-}
+  "type": "landscape_comparison", "path": "docs/methodology/landscape_en.md", "lang": "en"}
