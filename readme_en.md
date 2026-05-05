@@ -51,10 +51,10 @@ For research: measurable divergence (drift), fully auditable.
 **The Four‑Question Method**  
 Evaluate any LLM answer:
 
-1. Did it hit the topic? 🟢 / 🔴  
-2. Is there a new idea? 🟢 / 🟡 / 🔴  
-3. Is it verifiable? (number, date, place, if‑then) 🟢 / 🔴  
-4. Is it understandable? 👍 / 👎  
+1. On topic? 🟢 / 🔴  
+2. New idea? 🟢 / 🟡 / 🔴  
+3. Verifiable? (number, date, place, if‑then) 🟢 / 🔴  
+4. Understandable? 👍 / 👎  
 
 Good answer = 🟢 + 👍  
 
